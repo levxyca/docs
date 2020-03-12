@@ -1,7 +1,6 @@
 # C
 
-Files: https://drive.google.com/file/d/0B-1TnLlQA-iqRlphR2lOR2JLN3NEMU1oaHN3Q2xzd2FtbFRn/view?usp=sharing, https://www.tutorialspoint.com/cprogramming/index.htm, https://www.tutorialspoint.com/c_standard_library/index.htm, https://www.unicamp.br/fea/ortega/info/aula09.htm, https://www.cprogressivo.net/2013/03/Como-gerar-numeros-aleatorios-em-C-com-a-rand-srand-e-seed.html, https://cloud.utfpr.edu.br/index.php/s/812GTTK8CNZtdFU
-Tags: linguagem, programação, utfpr
+Links úteis: [Tutoriais de C](https://www.tutorialspoint.com/cprogramming/index.htm), [Bibliotecas em C](https://www.tutorialspoint.com/c_standard_library/index.htm).
 
 int main () {
     	printf("Hello World!");
