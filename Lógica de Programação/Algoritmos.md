@@ -1,7 +1,5 @@
 # Algoritmos
 
-Tags: logica, utfpr
-
 # Introdução
 
 - Algoritmos são um conjunto de comandos que resultam uma sucessão finita de ações.
