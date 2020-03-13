@@ -1,5 +1,5 @@
 # :books: Study Notes
--------------------------------------------------------
+
 ## :bookmark_tabs: Sumário
 
 ### :arrow_down: Git e Github
@@ -12,6 +12,6 @@
 #### Front-end
 :small_blue_diamond: [Javascript](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/javascript.md)
 
-#### :arrow_down: Back-end
+#### Back-end
 :small_blue_diamond: [C](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/C.md)  
 :small_blue_diamond: [Python](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/python.md)
