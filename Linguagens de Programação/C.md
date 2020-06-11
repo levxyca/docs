@@ -174,9 +174,11 @@ Serve para fazer testes condicionais
 3. +, -
 4. <, <=, >, >=
 5. ==, !=
+6. pós-decremento/decremento (tem precedência sobre pré/incremento/descremento)
 - Associação da direita para a esquerda
 1. --, ++
 2. =, +=, -=, *=, /=, %=
+3. pré-incremento/decremento
 
 ## Instrução break e continue
 
@@ -259,7 +261,7 @@ Serve para fazer testes condicionais
 
 ### Chamada da função
 
-    nome_da-funcao (lista_de_argumentos)
+    nome_da_funcao (lista_de_argumentos)
 
 ### Protótipo de uma função
 
@@ -414,7 +416,7 @@ Para usá-las é preciso do <string.h>
     1. compara duas strings e retorna um valor
         1. < 0 se a primeira vier alfabeticamente antes
         2. 0 se as strings forem iguais
-        3. > 0 se a primeira vier alfabeticamente depois
+        3. "> 0" se a primeira vier alfabeticamente depois
     2. diferencia letras maiúsculas e minusculas
 
     strcmp (<strig1>, <string2>);
