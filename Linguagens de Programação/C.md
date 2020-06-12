@@ -268,17 +268,7 @@ Serve para fazer testes condicionais
 - A função é declarada após a main ( ).
 - Antes do main ( ) apenas o protótipo.
 
-    int teste (int a);
-    
-    int main () {
-    	int a = 1;
-    	...
-    }
-    
-    int teste (int a) {
-    	...
-    	return a;
-    }
+    tipo_de_retorno nome_da_funcao (lista_de_parametros);
 
 ### Tipos de função
 
