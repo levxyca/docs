@@ -22,4 +22,8 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 - #### [Github]()
 
 
-//TODO adicionar um footer aqui
+-------------------------------------------------------
+<p align="center">
+Feito com :hearts: por
+<a href="https://github.com/levxyca">Leticia Caroline Leonardo</a>
+<p>
