@@ -14,7 +14,6 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 
 - #### [HTML](https://github.com/levxyca/studynotes/blob/master/Desenvolvimento%20Web/html.md#html-b%C3%A1sico)
 - #### [CSS](https://github.com/levxyca/studynotes/blob/master/Desenvolvimento%20Web/css.md#css-b%C3%A1sico)
-- #### [Flexbox](https://github.com/levxyca/studynotes/blob/master/Desenvolvimento%20Web/flexbox.md#fundamentos-do-flexbox)
 
 ### Linguagens de programação
 
