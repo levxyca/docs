@@ -12,6 +12,8 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 
 ### Desenvolvimento Web
 
+- #### [HTML]()
+- #### [CSS]()
 - #### [Flexbox]()
 
 ### Linguagens de programação
