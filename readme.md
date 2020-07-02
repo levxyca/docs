@@ -1,4 +1,4 @@
-<img src="logo-sn.png" align="center"> //TODO Concertar imagem quebrada
+<h1 align="center">Anotações de Estudos</h1>
 
 Esse repositório foi criado para organizar todas as minhas anotações de estudos, sinta-se a vontade para ler os resumos, ver resoluções de exercícios e aprender muito.
 
