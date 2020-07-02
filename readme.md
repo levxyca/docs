@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="code.png" width="100px" height="100px">
+<p>
+
 <h1 align="center">Anotações de Estudos</h1>
 
 Esse repositório foi criado para organizar todas as minhas anotações de estudos, sinta-se a vontade para ler os resumos, ver resoluções de exercícios e aprender muito.
