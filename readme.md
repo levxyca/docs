@@ -1,17 +1,35 @@
-# :books: Study Notes
+<p align="center">
+  <img src="code.png" width="100px" height="100px">
+<p>
 
-## :bookmark_tabs: Sumário
+<h1 align="center">Anotações de Estudos</h1>
 
-### :arrow_down: Git e Github
-:small_blue_diamond: [Git e Github](https://github.com/levxyca/studynotes/blob/master/Git%20e%20Github/git-github.md)
+Esse repositório foi criado para organizar todas as minhas anotações de estudos, sinta-se a vontade para ler os resumos, ver resoluções de exercícios e aprender muito.
 
-### :arrow_down: Lógica de Programação
-:small_blue_diamond: [Algoritmos](https://github.com/levxyca/studynotes/blob/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o/Algoritmos.md)
+### Lógica de programação
 
-### :arrow_down: Linguagens de Programação
-#### Front-end
-:small_blue_diamond: [Javascript](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/javascript.md)
+- #### [Algoritmos]()
 
-#### Back-end
-:small_blue_diamond: [C](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/C.md)  
-:small_blue_diamond: [Python](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/python.md)
+### Desenvolvimento Web
+
+- #### [HTML]()
+- #### [CSS]()
+- #### [Flexbox]()
+
+### Linguagens de programação
+
+- #### [C]()
+- #### [Python]()
+- #### [Javascript]()
+
+### Ferramentas
+
+- #### [Git]()
+- #### [Github]()
+
+
+-------------------------------------------------------
+<p align="center">
+Feito com :hearts: por
+<a href="https://github.com/levxyca">Leticia Caroline Leonardo</a>
+<p>
