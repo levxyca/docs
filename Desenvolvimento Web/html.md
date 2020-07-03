@@ -2,7 +2,7 @@
 
 O que é?
 
-É um conjunto de regras(tags), criadas para amrcação de textos. Este conjunto facilita a compreensão semântica do texto por máquinas.
+É um conjunto de regras(tags), criadas para marcação de textos. Este conjunto facilita a compreensão semântica do texto por máquinas.
 
 **Anatomia**
 
@@ -84,8 +84,6 @@ Links Internos
 Imagem
 - <img src="pasta/arquivo.png" alt="texto para ajudar leitores de tela">
 ```
-
-- H1 deve ser o único da pagina
 
 - Hierarquia: H1 ao H6
 
