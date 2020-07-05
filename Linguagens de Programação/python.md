@@ -8,7 +8,7 @@ Curso usado: Python para zumbis
 ## Começando com o básico
 ### Hello World em Python
 ~~~python
-printf ('Hello World!')
+print ('Hello World!')
 ~~~
 - Letras maiusculas e minusculas em python são comandos diferentes, atente-se a isso.
 ### Operações básicas
@@ -116,18 +116,25 @@ Para fazer comentários em python utilizamos a '#'
 #### If
 ~~~python
 if a > b:
+    pass
 ~~~
 #### Else
 ~~~python
 if a > b:
+    pass
 else:
+    pass
 ~~~
 #### Elif
 ~~~python
 if a > b:
+    pass
 elif a < b:
+    pass
 elif a = b:
+    pass
 else:
+    pass
 ~~~
 ### Repetições
 #### While
