@@ -134,7 +134,7 @@ Enquanto, para...
     	(código)
     }
 
-    // iŕa executar pelo menos 1 vez
+    // irá executar pelo menos 1 vez
     Do {
     	(código)
     } while (condição);

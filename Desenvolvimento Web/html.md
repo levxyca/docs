@@ -2,7 +2,7 @@
 
 O que é?
 
-É um conjunto de regras(tags), criadas para marcação de textos. Este conjunto facilita a compreensão semântica do texto por máquinas.
+É um conjunto de regras (tags), criadas para marcação de textos. Este conjunto facilita a compreensão semântica do texto por máquinas.
 
 **Anatomia**
 
@@ -125,12 +125,12 @@ Imagem
 
 ```html
 <table>
-	<tr> //linha
-		<th>É isso ai</th> //coluna
+	<tr> // linha!
+		<th> É isso aí! </th> // coluna!
 	</tr>
 </table>
 
-/*primeiro th geralmente é pro titulo da coluna*/
+/* primeiro th geralmente é pro titulo da coluna! */
 ```
 
 ### Elementos estruturais
