@@ -19,7 +19,7 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 
 - #### [C](https://github.com/levxyca/hello-world.c)
 - #### [Python](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/python.md#python)
-- #### [Javascript](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/javascript.md#javascript)
+- #### [Javascript](https://github.com/levxyca/hello-world.js)
 
 ### Ferramentas
 
