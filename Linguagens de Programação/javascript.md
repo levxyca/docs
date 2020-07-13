@@ -110,3 +110,133 @@ var frase1 = 'Leticia bebeu ' + coposAgua + ' copos de água';
 // Utilizando Template String
 var frase2 = `Leticia bebeu ${coposAgua} copos de água`; 
 ```
+
+## Operadores Aritméticos
+
+- Multiplicação e divisão, depois por soma e subtração
+- Parênteses para priorizar uma expressão
+
+```jsx
+var soma = 100 + 50; // 150
+var subtracao = 100 - 50; // 50
+var multiplicacao = 100 * 2; // 200
+var divisao = 100 / 2; // 50
+var expoente = 2 ** 4; // 16
+var modulo = 14 % 5; // 4
+```
+
+### Operadores Aritméticos em Strings
+
+- É possível verificar se uma variável é NaN ou não com a função isNaN()
+
+```jsx
+var soma = '100' + 50; // 10050
+var subtracao = '100' - 50; // 50
+var multiplicacao = '100' * '2'; // 200
+var divisao = 'Comprei 10' / 2; // NaN (Not a Number)
+```
+
+### Incremento e Decremento
+
+- Mesma coisa para o decremento --decremento
+
+```jsx
+var incremento = 5;
+console.log(incremento++); // 5
+console.log(incremento); // 6
+
+var incremento2 = 5;
+console.log(++incremento2); // 6
+console.log(incremento2); // 6
+```
+
+## Operadores Lógicos
+
+```jsx
+&& // and
+|| // or
+! // not
+```
+
+## Comparação
+
+```jsx
+(==) // iguais.
+
+(!=) // não iguais.
+
+(===) // iguais e do mesmo tipo.
+
+(!==) // não iguais e/ou não do mesmo tipo
+
+(>) // maior que
+
+(>=) // maior ou igual
+
+(<) // menor que
+
+(<=) // menor ou igual
+```
+
+## Boolean
+
+- *false* ou *true*
+
+```jsx
+var possuiCurso = true;
+var possuiGraduacao = false;
+```
+
+## Truthy e Falsy
+
+- !! verifica a expressão
+
+```jsx
+// Falsy
+if(false)
+if(0) // ou -0
+if(NaN)
+if(null)
+if(undefined)
+if('') // ou "" ou ``
+```
+
+```jsx
+// Truthy
+if(true)
+if(1)
+if(' ')
+if('andre')
+if(-5)
+if({})
+```
+
+## Estruturas Condicionais
+
+### Condicionais If e Else
+
+```jsx
+var estouTriste = true;
+
+if(estouTriste) {
+  console.log('Estou realmente triste');
+} else {
+  console.log('Não estou triste, olha só');
+}
+// retorna Estou realmente triste e não executa o else
+```
+
+### Condicionais Else If
+
+```jsx
+var a = 1,
+		b = 2;
+
+if(a < b) {
+	console.log('a é menor que b');
+} else if (a = b) {
+	console.log('a é igual a b');
+} else {
+	console.log('Não é nenhuma das opções');
+}
+```
