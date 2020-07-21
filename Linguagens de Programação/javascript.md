@@ -240,3 +240,78 @@ if(a < b) {
 	console.log('Não é nenhuma das opções');
 }
 ```
+
+### Switch
+
+```jsx
+var corFavorita = 'Azul';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu.');
+    break;
+  case 'Vermelho':
+    console.log('Olhe para rosas.');
+    break;
+  case 'Amarelo':
+    console.log('Olhe para o sol.');
+    break;
+  default:
+    console.log('Feche os olhos');
+}
+```
+
+## Funções
+
+- Bloco de código que pode ser executado e reutilizado
+- Parênteses () executam uma função
+- Ao criar uma função, você pode definir parâmetros
+- Ao executar uma função, você pode passar argumentos
+- Separar por vírgula cada parâmetro
+- Se não executarmos a função nada que estiver dentro dela vai acontecer
+- Quando não definimos o return, ela irá retornar *undefined*
+- Pode retornar qualquer tipo de dado e até outras funções
+- JS 'move' todas as funções declaradas para a memória
+
+```jsx
+function areaQuadrado(lado) {
+  return lado * lado;
+}
+
+areaQuadrado(4) // 16
+areaQuadrado(5) // 25
+areaQuadrado(2) // 4
+```
+
+```jsx
+// peso e altura são os parâmetros
+function imc(peso, altura) {
+  const imc = peso / (altura ** 2);
+  return imc;
+}
+
+imc(60, 1.50) // g0 e 1.50 são os argumentos
+```
+
+### Argumentos podem ser funções
+
+- Geralmente são funções que ocorrem após algum evento
+- Anônimas são aquelas em que o nome da função não é definido
+- function() {} ou () => {}
+
+```jsx
+addEventListener('click', function() {
+  console.log('Clicou');
+});
+// A função possui dois argumentos
+// Primeiro é a string 'click'
+// Segundo é uma função anônima
+```
+
+### Escopo
+
+Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora dele.
+
+### Escopo Léxico
+
+Funções conseguem acessar variáveis que foram criadas no contexto pai, por exemplo, quando temos uma função dentro de outra função.
