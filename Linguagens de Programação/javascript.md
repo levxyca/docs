@@ -315,3 +315,43 @@ Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora
 ### Escopo Léxico
 
 Funções conseguem acessar variáveis que foram criadas no contexto pai, por exemplo, quando temos uma função dentro de outra função.
+
+## Objetos
+
+- Conjunto de variáveis e funções, que são chamadas de propriedades e métodos
+- **This** irá fazer uma referência ao próprio objeto
+- O objeto herda propriedades e métodos do objeto que foi utilizado para criar o mesmo
+
+```jsx
+var pessoa = {
+  nome: 'Leticia',
+  idade: 18,
+}
+
+pessoa.nome; // 'Leticia'
+pessoa.idade; // 18
+
+//DOT NOTATION SET
+pessoa.idade = 19;
+pessoa.idade; //19
+
+//ADICIONAR PROPRIEDADES E MÉTODOS
+pessoa.possuiFaculdade = true;
+```
+
+### Métodos
+
+- É uma propriedade que possui uma função no local do seu valor
+- Abreviação de **area: function() {}** para **area() {}**, no ES6+
+
+```jsx
+var quadrado = {
+  lados: 4,
+  area: function(lado) {
+    return lado * lado;
+  },
+}
+
+quadrado.lados; // 4
+quadrado.area(5); // 25
+```
