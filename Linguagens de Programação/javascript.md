@@ -355,3 +355,107 @@ var quadrado = {
 quadrado.lados; // 4
 quadrado.area(5); // 25
 ```
+## Arrays e Loops
+
+### Array
+
+Servem para guardarmos diferentes valores em uma única variável
+
+```jsx
+var frutas = ['Banana', 'Abacaxi', 'Maça'];
+
+videoGames[0] // Banana
+videoGames[2] // Maça
+```
+
+### For Loop
+
+Fazem algo repetidamente até que uma condição seja atingida.
+
+```jsx
+for (var n = 0; n < 10; n++) {
+  console.log(n);
+}
+// Retorna de 0 a 9 no console
+```
+
+### While Loop
+
+```jsx
+var i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+// Retorna de 0 a 9 no console
+```
+
+### Arrays e Loops
+
+```jsx
+var frutas = ['Banana', 'Abacaxi', 'Maça'];
+for (var i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+```
+
+### Break
+
+Faz com que o loop pare.
+
+### forEach
+
+Executa uma função para cada item da Array.
+
+```jsx
+var frutas = ['Banana', 'Abacaxi', 'Maça'];
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+// O argumento item será atribuído dinamicamente
+```
+
+## Atribuição e Ternário
+
+### Comentários
+
+```jsx
+// Comentário de uma linha
+
+/*
+Comentário
+com diversas
+linhas
+*/
+```
+
+### Operadores de atribuição abreviados
+
+```jsx
+x += y;
+x -= y;
+x *= y;
+x /= y;
+x %= y;
+x **= y;
+```
+
+### Operador Ternário
+
+Abreviação com *if* e *else*
+
+```jsx
+var numero = 1;
+var verificaNumero = (numero >= 2) ? 'É maior' : 'Não é maior';
+console.log(podeBeber) // Pode beber
+
+// condição ? true : false
+```
+
+## Escopo
+
+- Variáveis declaradas dentro de funções não são acessadas fora das mesmas.
+- Declarar variáveis sem a palavra chave *var*, *const* ou *let*, cria uma variável global.
+- Variáveis criadas com *var*, vazam o bloco.
+- *let* e *const* respeitam o escopo de bloco.
+- {} criam um escopo de bloco.
