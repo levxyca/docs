@@ -18,6 +18,7 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 ### Linguagens de programação
 
 - #### [C](https://github.com/levxyca/hello-world.c)
+- #### [Java](https://github.com/levxyca/hello-world.java)
 - #### [Python](https://github.com/levxyca/studynotes/blob/master/Linguagens%20de%20Programa%C3%A7%C3%A3o/python.md#python)
 - #### [Javascript](https://github.com/levxyca/hello-world.js)
 
