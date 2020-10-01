@@ -459,3 +459,47 @@ console.log(podeBeber) // Pode beber
 - Variáveis criadas com *var*, vazam o bloco.
 - *let* e *const* respeitam o escopo de bloco.
 - {} criam um escopo de bloco.
+
+# DOM
+
+## Introdução
+
+É uma interface que representa documentos HTML e XML através de objetos
+
+### Window e Document
+
+- Principais objetos do DOM
+- window é objeto global
+
+```jsx
+window.alert('Isso é um alerta');
+alert('Isso é um alerta'); // Funciona
+
+document.querySelector('h1'); // Seleciona o primeiro h1
+document.body; // Retorna o body
+```
+
+### Node
+
+- Toda tag html é representada pelo objeto Element
+- Element é um tipo de objeto Node
+
+```jsx
+const titulo = document.querySelector('h1');
+
+titulo.innerText; // retorna o texto;
+titulo.classList; // retorna as classes;
+titulo.id; // retorna o id;
+titulo.offsetHeight; // retorna a altura do elemento;
+
+titulo.addEventListener('click', callback);
+// ativa a função callback ao click no titulo
+```
+
+## Seleção de elementos
+
+- **getElementById** seleciona e retorna elementos do DOM
+- **getElementsByClassName** e **getElementsByTagName** selecionam e retornam uma lista de elementos do DOM (automaticamente atualizada)
+- **querySelector** retorna o primeiro elemento que combinar com o seu seletor CSS
+- **querySelectorAll** retorna todos os elementos compatíveis com o seletor CSS em uma NodeList (estática)
+- **HTMLCollection** e **NodeList** são array-like, parecem uma array mas não são. O método de Array **forEach()** por exemplo, existe apenas em NodeList.
