@@ -25,10 +25,3 @@ Esse repositório foi criado para organizar todas as minhas anotações de estud
 
 - #### [Git](https://github.com/levxyca/studynotes/blob/master/Ferramentas/git-github.md#git)
 - #### [Github](https://github.com/levxyca/studynotes/blob/master/Ferramentas/git-github.md#git-hub)
-
-
--------------------------------------------------------
-<p align="center">
-Feito com :hearts: por
-<a href="https://github.com/levxyca">Leticia Caroline Leonardo</a>
-<p>
