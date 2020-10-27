@@ -6,7 +6,7 @@ Linguagem de programação interpretada
 # Hello World!
 
 ```jsx
-console.log('Hello Wordl!');
+console.log('Hello World!');
 ```
 
 # Introdução
@@ -40,8 +40,8 @@ var pessoas = ['Diego', 'Gabriel', 'Lucas'];
 
 ```jsx
 var nome = 'Leticia',
-		idade = 18,
-		querAprender = true;
+    idade = 18,
+    querAprender = true;
 ```
 
 ### Variável sem valor
