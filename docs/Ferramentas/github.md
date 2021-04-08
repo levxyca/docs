@@ -1,3 +1,10 @@
++++
+title = "Github"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
++++
+
 # Github
 ## Introdução ao Github
 O github consegue armazenar os seus repositórios e com ele você tem o controle de versão dos seus arquivos.

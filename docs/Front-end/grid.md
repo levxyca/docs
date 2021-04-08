@@ -1,3 +1,10 @@
++++
+title = "Grid"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
++++
+
 # Grid Container
 
 O Grid Container é a tag que envolve os itens do grid, ao indicar display: grid, essa tag passa a ser um Grid Container.

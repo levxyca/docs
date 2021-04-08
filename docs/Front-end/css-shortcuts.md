@@ -1,3 +1,10 @@
++++
+title = "Um grande titulo"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
++++
+
 # CSS - Shortcuts
 
 ## Descendant Selector

@@ -1,3 +1,10 @@
++++
+title = "C"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
++++
+
 # C
 
 Links úteis: [Tutoriais de C](https://www.tutorialspoint.com/cprogramming/index.htm), [Bibliotecas em C](https://www.tutorialspoint.com/c_standard_library/index.htm).

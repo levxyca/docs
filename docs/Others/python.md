@@ -1,3 +1,10 @@
++++
+title = "Python"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
++++
+
 # Python
 ---------------------------------------------
 Curso usado: Python para zumbis
