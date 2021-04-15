@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title> Docs | Git </title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+  <ul id="breadcrumbs">
+    
+      
+      <li><a href="&#x2F;">Docs</a>&nbsp;&#8594;&nbsp;</li> 
+    
+      
+      <li><a href="&#x2F;Ferramentas&#x2F;">Ferramentas</a>&nbsp;&#8594;&nbsp;</li> 
+    
+  </ul>
+  <h1>Git</h1><em></em> 
+
+      </nav>
+
+      <main>
+      
+  <div id="taxonomies">
+    
+      <date>14.04.2021</date>
+       
+
+    
+    
+    
+  </div>
+
+  
+  
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  
+
+  
+      <ul id="toc">
+        
+          <li><a href="/Ferramentas/git/#git">Git</a>
+          <ul>        
+            
+            <li><a href="/Ferramentas/git/#funcionalidades">Funcionalidades</a></li>
+          
+            <li><a href="/Ferramentas/git/#tipos-de-controle-de-versao">Tipos de controle de versão</a></li>
+          
+            <li><a href="/Ferramentas/git/#comandos-basicos">Comandos Básicos</a></li>
+          
+         </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+  <article>
+    <h1 id="git">Git<a class="anchor" href="#git">§</a>&nbsp;</h1>
+<hr />
+<p>Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+<h2 id="funcionalidades">Funcionalidades<a class="anchor" href="#funcionalidades">§</a>&nbsp;</h2>
+<h3 id="historico">Histórico<a class="anchor" href="#historico">§</a>&nbsp;</h3>
+<ul>
+<li>Alternar entre as versões</li>
+<li>Saber que existe um &quot;plano B&quot; caso as alterações não deem certo</li>
+</ul>
+<h3 id="trabalho-em-equipe">Trabalho em equipe<a class="anchor" href="#trabalho-em-equipe">§</a>&nbsp;</h3>
+<ul>
+<li>Desenvolvimento em paralelo em diferentes ambientes</li>
+</ul>
+<h3 id="ramificacao">Ramificação<a class="anchor" href="#ramificacao">§</a>&nbsp;</h3>
+<ul>
+<li>Possibilidade de criar várias versões a partir de um ponto</li>
+<li>Juntar as funcionalidades/mudanças após finalizadas</li>
+</ul>
+<h3 id="rastreabilidade">Rastreabilidade<a class="anchor" href="#rastreabilidade">§</a>&nbsp;</h3>
+<ul>
+<li>Identificar em que ponto a mudança foi feita</li>
+<li>Identificar o responsável pela mudança</li>
+</ul>
+<h2 id="tipos-de-controle-de-versao">Tipos de controle de versão<a class="anchor" href="#tipos-de-controle-de-versao">§</a>&nbsp;</h2>
+<h3 id="centralizado">Centralizado<a class="anchor" href="#centralizado">§</a>&nbsp;</h3>
+<ul>
+<li>Servidor centralizado que possui todo o histórico</li>
+<li>Padrão durante muitos anos</li>
+</ul>
+<h3 id="distribuido">Distribuído<a class="anchor" href="#distribuido">§</a>&nbsp;</h3>
+<ul>
+<li>Cada computador possui uma cópia do repositório
+<ul>
+<li>Alterações rápidas e locais</li>
+<li>Réplica de repositórios caso o central se perca</li>
+</ul>
+</li>
+</ul>
+<h2 id="comandos-basicos">Comandos Básicos<a class="anchor" href="#comandos-basicos">§</a>&nbsp;</h2>
+<h3 id="configuracoes-do-usuario">Configurações do usuário<a class="anchor" href="#configuracoes-do-usuario">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git config</span><span style="font-style:italic;color:#fd971f;"> --global</span><span style="color:#e6e1dc;"> user.name </span><span style="color:#c1be91;">&quot;Seu nome&quot;
+</span><span style="color:#e6e1dc;">git config</span><span style="font-style:italic;color:#fd971f;"> --global</span><span style="color:#e6e1dc;"> user.email </span><span style="color:#c1be91;">&quot;Seu email&quot;
+</span></code></pre>
+<p>Caso queira ver se as suas configurações estão corretas, você pode listar elas:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git config</span><span style="font-style:italic;color:#fd971f;"> --list
+</span></code></pre><h3 id="criacao-de-um-repositorio-local">Criação de um repositório local<a class="anchor" href="#criacao-de-um-repositorio-local">§</a>&nbsp;</h3>
+<p>Primeiro, crie uma pasta para o projeto e em seguida entre na pasta via comando no terminal.</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#da4939;">cd</span><span style="color:#e6e1dc;"> nomedapasta/
+</span></code></pre>
+<p>Para listar o que tem na pasta via comando:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">dir
+</span></code></pre>
+<p>Inicializando o repositório:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git init
+</span></code></pre>
+<p>Caso precise forçar a listagem de arquivos ocultos:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">dir</span><span style="font-style:italic;color:#fd971f;"> -a
+</span></code></pre>
+<p>Após a criação do repositório, ele vai mostrar um master que é uma branch, ou também pode ser chamada de ramificação.</p>
+<p>&quot;Master&quot; é a branch principal do projeto quando um repositório é criado.</p>
+<p>Nesse primeiro momento, como só temos ela, ela é nossa branch base e a partir dela podemos criar novas branches.</p>
+<p>Quando listamos os arquivos ocultos, encontramos um arquivo &quot;.git&quot; que guarda todas as informações do repositório, como se fosse um banco de dados.</p>
+<p>Ainda é válido ressaltar que o repositório não precisa estar vazio para ser inicializado. Caso queira iniciar um já coma rquivos dentro é só seguir mesmos passos de anteriormente.</p>
+<p>A partir do momento que você inicializa o repositório já se pode começar a versionar o seu projeto.</p>
+<h3 id="versionamento-adicionando-alteracoes">Versionamento - Adicionando Alterações<a class="anchor" href="#versionamento-adicionando-alteracoes">§</a>&nbsp;</h3>
+<p>Você precisa falar pro git quais os arquivos que você quer versionar.</p>
+<p>Para ver qual é o estado dos seus arquivos:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git status
+</span></code></pre>
+<p>Untracked file significa que aquele arquivo não está sendo rastreado.</p>
+<p>Para adicionar um arquivo para ser restreado:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git add nomedoarquivo
+</span></code></pre>
+<p>Caso queira fazer isso com mais arquivos, por exemplo, com todos os arquivos da pasta, temos três opções:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git add</span><span style="font-style:italic;color:#fd971f;"> --all
+</span><span style="color:#e6e1dc;">git add</span><span style="font-style:italic;color:#fd971f;"> -A
+</span><span style="color:#e6e1dc;">git add .
+</span></code></pre><h3 id="versionamento-salvando-alteracoes">Versionamento - Salvando alterações<a class="anchor" href="#versionamento-salvando-alteracoes">§</a>&nbsp;</h3>
+<p>Commit é você salvar uma nova versão do seu banco de dados local no seu git.</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git commit</span><span style="font-style:italic;color:#fd971f;"> -m </span><span style="color:#c1be91;">&quot;Insira a mensagem explicando o que foi feito aqui&quot;
+</span></code></pre><h3 id="funcionamento-do-git">Funcionamento do git<a class="anchor" href="#funcionamento-do-git">§</a>&nbsp;</h3>
+<h4 id="working-directory">Working Directory<a class="anchor" href="#working-directory">§</a>&nbsp;</h4>
+<p>Seria o local dos arquivos, no caso, a pasta local no seu computador.</p>
+<ul>
+<li>Arquivos
+<ul>
+<li>Modificados</li>
+<li>Excluídos</li>
+<li>Adicionados</li>
+</ul>
+</li>
+</ul>
+<p>Para ir pro próximo estágio:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git add
+</span></code></pre><h4 id="stagind-area-staged">Stagind Area (Staged)<a class="anchor" href="#stagind-area-staged">§</a>&nbsp;</h4>
+<p>Arquivos adicionados e preparados para serem versionados.</p>
+<p>Próximo estágio:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git commit
+</span></code></pre><h4 id="comitted">Comitted<a class="anchor" href="#comitted">§</a>&nbsp;</h4>
+<p>Os arquivos estão salvos.</p>
+<h3 id="visualizando-alteracoes">Visualizando alterações<a class="anchor" href="#visualizando-alteracoes">§</a>&nbsp;</h3>
+<p>Diz as diferenças que ocorreram no seu repositório de trabalho e nas alterações que você tem commitado:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git diff
+</span></code></pre>
+<p>Para ver as diferenças no modo de preparação antes de commitar:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git diff</span><span style="font-style:italic;color:#fd971f;"> --cached
+</span></code></pre><h3 id="historico-de-alteracoes">Histórico de alterações<a class="anchor" href="#historico-de-alteracoes">§</a>&nbsp;</h3>
+<p>Comando usado para ver o histórico de todos os commits que foram feitos no seu projeto:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git log
+</span></code></pre>
+<p>As modificações são listadas sempre das mais recentes para as mais antigas.</p>
+<p>O número gigante que aparece escrito após o commit no git log é um tipo de id única para o seu commit, esse número é gerado aleatóriamente e mais tarde nós poderemos usar ele.</p>
+<p>O HEAD aponta a sua última modificações em uma branch.</p>
+<p>O git log tem muitas configurações, vale a pena pesquisar mais. Por exemplo, o comando a baixo mostra todas as modificações em uma linha e é interessante pra quando você tem muitos commits.</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git log</span><span style="font-style:italic;color:#fd971f;"> --oneline
+</span></code></pre><h3 id="usando-commits-anteriores">Usando commits anteriores<a class="anchor" href="#usando-commits-anteriores">§</a>&nbsp;</h3>
+<p>Para usar as modificações anteriores vamos utilizar aquele número escrito após o commit no git log.</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git checkout insiranumero
+</span></code></pre>
+<p>Como esse número é muito grande você pode digitar somente os 6 primeiros, pois estes são únicos.</p>
+<p>Quando você ver &quot;Detached HEAD&quot; significa que a gente pegou nosso checkout e foi para um lugar diferente do HEAD.</p>
+<p>Para sair do commit antigo:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git checkout nomedabranch
+git checkout master
+</span></code></pre><h3 id="desfazendo-alteracoes">Desfazendo alterações<a class="anchor" href="#desfazendo-alteracoes">§</a>&nbsp;</h3>
+<p>Para desfazer as alterações feitas no git, podemos voltar o arquivo para o commit anterior:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git checkout nomedoarquivo
+</span></code></pre>
+<p>Entretanto, isso não funciona para arquivos adicionados, ou seja, arquivos novos no projeto.</p>
+<p>Quando tmos muitos arquivos modificados, fica inviável usar o método acima, como solução podemos usar um comando para desfazer as alterações de todos os arquivos que estão na sua branch, onde você consegue voltar ao estado inicial:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git reset</span><span style="font-style:italic;color:#fd971f;"> --hard
+</span></code></pre>
+<p>Dessa forma você volta diretamente sem precisar de uma confirmação, como um atalho, mas também pode-se fazer da seguinte forma:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git reset
+git reset</span><span style="font-style:italic;color:#fd971f;"> --hard
+</span></code></pre><h3 id="desfazendo-alteracoes-nao-rastreadas">Desfazendo alterações não rastreadas<a class="anchor" href="#desfazendo-alteracoes-nao-rastreadas">§</a>&nbsp;</h3>
+<p>Para forçar a remoção de arquivos que foram adicionados:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git clean</span><span style="font-style:italic;color:#fd971f;"> -f
+</span></code></pre>
+<p>O git clean também possui várias opções de comandos que vale a pena conferir.</p>
+<h3 id="ignorando-arquivos">Ignorando arquivos<a class="anchor" href="#ignorando-arquivos">§</a>&nbsp;</h3>
+<p>Em certas situações vamos ter arquivos aos quais não queremos que sejam versionados, como arquivos gerados durante uma execução, para ignorar esses arquivos vamos criar um arquivo da extensão git ignore.</p>
+<p>No windows:</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">ren a.txt .gitignore
+</span></code></pre>
+<p>Dentro do arquivos .gitignore nós podemos usar alguns padrões para falar para o git excluir arquivos de um certo tipo. Por exemplo:
+&quot;nomedoarquivo.extensão&quot; - para excluir um arquivo específico
+&quot;<em>.extensão&quot; - para excluir do versionamento todos os arquivos deste tipo
+&quot;nomedapasta/</em>.extensão&quot; - para ecluir todos os arquivos deste tipo que estão dentro da pasta &quot;x&quot;</p>
+<p>No mac/linux:
+Use mv.</p>
+<h3 id="clonando-repositorio">Clonando repositório<a class="anchor" href="#clonando-repositorio">§</a>&nbsp;</h3>
+<p>Para clonar um repositório utilizaremos o git clone, que funciona não só em urls remotas como em arquivos locais.</p>
+<pre style="background-color:#383838;">
+<code class="language-sh" data-lang="sh"><span style="color:#e6e1dc;">git clone nomedapastaclonada/ nomedanovapasta
+git clone url
+</span></code></pre>
+  </article>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>
