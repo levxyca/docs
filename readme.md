@@ -7,7 +7,7 @@
 
 > Esse projeto reune todos os conteúdos que auxiliam meus estudos e resumos criados por mim.
 
-## ☕ Acesse o projeto [aqui](https://levxyca.codes/docs/).
+## ☕ Acesse o projeto [aqui](https://docs-levxyca.netlify.app/).
 
 Você pode utilizar o ícone de lupa para buscar algum conteúdo específico ou simplesmente navegar pelas páginas.
 
