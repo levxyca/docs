@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title> Docs | CSS </title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+  <ul id="breadcrumbs">
+    
+      
+      <li><a href="&#x2F;">Docs</a>&nbsp;&#8594;&nbsp;</li> 
+    
+      
+      <li><a href="&#x2F;Front-end&#x2F;">Front-end</a>&nbsp;&#8594;&nbsp;</li> 
+    
+  </ul>
+  <h1>CSS</h1><em></em> 
+
+      </nav>
+
+      <main>
+      
+  <div id="taxonomies">
+    
+      <date>14.04.2021</date>
+       
+
+    
+    
+    
+  </div>
+
+  
+  
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  
+
+  <article>
+    <h1 id="css-basico">CSS Básico<a class="anchor" href="#css-basico">§</a>&nbsp;</h1>
+<h2 id="introducao">Introdução<a class="anchor" href="#introducao">§</a>&nbsp;</h2>
+<p>É uma linguagem de estilo que serve para definir a formatação de documentos html.</p>
+<p><strong>Anatomia do CSS:</strong></p>
+<pre style="background-color:#383838;">
+<code class="language-css" data-lang="css"><span style="color:#e8bf6a;">p</span><span style="color:#86c20e;">.conteudo </span><span style="color:#e6e1dc;">{
+	</span><span style="font-style:italic;color:#6e9cbe;">color</span><span style="color:#e6e1dc;">: </span><span style="color:#6d9cbe;">#222</span><span style="color:#e6e1dc;">;
+	</span><span style="font-style:italic;color:#6e9cbe;">font-size</span><span style="color:#e6e1dc;">: </span><span style="color:#a5c261;">1</span><span style="color:#cc7833;">em</span><span style="color:#e6e1dc;">;
+}
+</span></code></pre>
+<p>Para fazer referência ao CSS dentro do HTML:</p>
+<pre style="background-color:#383838;">
+<code class="language-html" data-lang="html"><span style="color:#e6e1dc;">&lt;</span><span style="color:#e8bf6a;">head</span><span style="color:#e6e1dc;">&gt;
+	&lt;</span><span style="color:#e8bf6a;">link </span><span style="color:#86c20e;">rel=</span><span style="color:#e6e1dc;">&quot;</span><span style="color:#c1be91;">stylesheet</span><span style="color:#e6e1dc;">&quot; </span><span style="color:#86c20e;">href=</span><span style="color:#e6e1dc;">&quot;</span><span style="color:#c1be91;">style.css</span><span style="color:#e6e1dc;">&quot;&gt;
+&lt;/</span><span style="color:#e8bf6a;">head</span><span style="color:#e6e1dc;">&gt;
+</span></code></pre><h2 id="seletores">Seletores<a class="anchor" href="#seletores">§</a>&nbsp;</h2>
+<p>Seletor é o que vai selecionar o elemento que você quer mudar com o CSS.</p>
+<p><strong>Class e  Id</strong></p>
+<ul>
+<li>São atributos que você coloca dentro da tag.</li>
+<li>Servem especificamente para CSS e JS.</li>
+<li>Id só pode ser utilizado 1 vez no HTML.</li>
+<li>Class é repetido para replicar estilos a diversas tags.</li>
+</ul>
+<h2 id="propriedades-de-texto">Propriedades de texto<a class="anchor" href="#propriedades-de-texto">§</a>&nbsp;</h2>
+<ul>
+<li><em>color</em> - cor do texto - hexadecimal</li>
+<li><em>font-style</em> - estilo do texto, italico normal ou oblique</li>
+<li><em>font-weight</em> - peso da fonte, bold</li>
+<li><em>font-size</em> - tamanho da fonte px</li>
+<li><em>line-height</em> - tamanho da linha px</li>
+<li><em>font-family</em> - tipografia</li>
+<li><em>font</em> - concatena todas as inforamções da fonte</li>
+<li><em>text-align</em> - alinhar o texto</li>
+<li><em>text-transform</em> - tudo em maiusculo ou minusculo ou capitalize</li>
+<li><em>text-indent</em> - pra identar a primeiralinha do paragarado</li>
+<li><em>text-decoration</em> - usa geralmente em link, no a</li>
+<li><em>text-shadow</em>- sombra no texto</li>
+<li><em>white-space</em>- não quebrar linha, forçar que o texto continue</li>
+<li><em>word-space</em> - distancia entre as palavras</li>
+<li><em>letter-space</em> - distancia das letras</li>
+</ul>
+
+  </article>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

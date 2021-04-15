@@ -1,0 +1,10 @@
+name = "Docsascode_theme"
+description = "A modern simple Zola's theme related to docs as code methodology"
+license = "MIT"
+homepage = "https://github.com/codeandmedia/zola_docsascode_theme"
+min_version = "0.10.0"
+demo = "https://docsascode.codeandmedia.com"
+
+[author]
+name = "Roman Soldatenkov"
+homepage = "https://codeandmedia.com"

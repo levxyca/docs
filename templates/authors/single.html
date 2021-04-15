@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block nav %}
+  <ul id="breadcrumbs">
+    <li><a href="/">{{config.title}}</a>&nbsp;&#8594;&nbsp;</li> 
+    <li><a href="/{{ taxonomy.name }}/">{{ taxonomy.name }}</a>&nbsp;&#8594;&nbsp;</li>
+  </ul>
+  <h1>{{ term.name }}</h1>
+{% endblock nav %}
+
+{% block content %}
+  <ul class="search-results__items">
+    {% for page in term.pages %}
+      <li class="search-results__item"><a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    {% if page.description %}
+      <div class="search-results__teaser">
+        {{ page.description | safe }}
+      </div></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock content %}

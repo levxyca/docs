@@ -1,0 +1,77 @@
+{% import "macro.html" as macro %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title>{% block title %}{{ config.title }}{% endblock title %}</title>     
+      <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      {% block nav %}
+        <h1>{{ config.title }}</h1>  
+          {{ macro::tree() }}
+      {% endblock nav %}
+      </nav>
+
+      <main>
+      {% block content %}
+
+        {% set_global header_count = 0 %}
+        {% for h2 in section.toc %}
+          {% set_global header_count = header_count + 1 %}
+          {% for h3 in h2.children %}
+            {% set_global header_count = header_count + 1 %}
+            {% for h4 in h3.children %}
+              {% set_global header_count = header_count + 1 %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+
+        {% if header_count > 4 %}
+            <ul id="toc">
+              {% for h2 in section.toc %}
+                <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                {% if h2.children %}<ul>        
+                  {% for h3 in h2.children %}
+                  <li><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
+                {% endfor %}
+              </ul>
+        {% endif %}
+              </li>
+        {% endfor %}
+            </ul>
+        {% endif %}
+
+        <article>
+        {{ section.content | safe }}
+        </article>
+      {% endblock content %}
+      </main>
+
+      <script type="text/javascript" src="{{ get_url(path="themes.js") | safe }}"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

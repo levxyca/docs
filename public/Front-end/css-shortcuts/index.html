@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title> Docs | CSS Shortcuts </title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+  <ul id="breadcrumbs">
+    
+      
+      <li><a href="&#x2F;">Docs</a>&nbsp;&#8594;&nbsp;</li> 
+    
+      
+      <li><a href="&#x2F;Front-end&#x2F;">Front-end</a>&nbsp;&#8594;&nbsp;</li> 
+    
+  </ul>
+  <h1>CSS Shortcuts</h1><em></em> 
+
+      </nav>
+
+      <main>
+      
+  <div id="taxonomies">
+    
+      <date>14.04.2021</date>
+       
+
+    
+    
+    
+  </div>
+
+  
+  
+    
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+  
+
+  
+      <ul id="toc">
+        
+          <li><a href="/Front-end/css-shortcuts/#css-shortcuts">CSS - Shortcuts</a>
+          <ul>        
+            
+            <li><a href="/Front-end/css-shortcuts/#descendant-selector">Descendant Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#combine-the-class-selector">Combine the Class Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#comma-combinator">Comma Combinator</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#universal-selector">Universal Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#adjacent-sibling-selector">Adjacent Sibling Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#general-sibling-selector">General Sibling Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#child-selector">Child Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#first-child-pseudo-selector">First Child Pseudo-selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#only-child-pseudo-selector">Only Child Pseudo-selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#last-child-pseudo-selector">Last Child Pseudo-selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#nth-child-pseudo-selector">Nth Child Pseudo-selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#first-of-type-selector">First of Type Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#nth-of-type-selector">Nth of Type Selector</a></li>
+          
+            <li><a href="/Front-end/css-shortcuts/#only-of-type-selector">Only Of Type Selector</a></li>
+          
+         </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+  <article>
+    <h1 id="css-shortcuts">CSS - Shortcuts<a class="anchor" href="#css-shortcuts">§</a>&nbsp;</h1>
+<h2 id="descendant-selector">Descendant Selector<a class="anchor" href="#descendant-selector">§</a>&nbsp;</h2>
+<h3 id="selecione-um-elemento-dentro-de-outro-elemento">Selecione um elemento dentro de outro elemento<a class="anchor" href="#selecione-um-elemento-dentro-de-outro-elemento">§</a>&nbsp;</h3>
+<p><code>p strong</code> seleciona todos os elementos <code>strong</code>que estão dentro de qualquer <code>p</code></p>
+<h2 id="combine-the-class-selector">Combine the Class Selector<a class="anchor" href="#combine-the-class-selector">§</a>&nbsp;</h2>
+<h3 id="combina-os-seletores-de-classe">Combina os seletores de classe<a class="anchor" href="#combina-os-seletores-de-classe">§</a>&nbsp;</h3>
+<p><code>ul.important</code> seleciona todas as <code>ul</code> que tem a classe <code>important</code></p>
+<h2 id="comma-combinator">Comma Combinator<a class="anchor" href="#comma-combinator">§</a>&nbsp;</h2>
+<h3 id="combina-seletores-com-commas">Combina seletores com commas<a class="anchor" href="#combina-seletores-com-commas">§</a>&nbsp;</h3>
+<p><code>p, .fun</code>irá selecionar todos os <code>&lt;p&gt;</code>assim como todos os elementos com a classe <code>fun</code></p>
+<h2 id="universal-selector">Universal Selector<a class="anchor" href="#universal-selector">§</a>&nbsp;</h2>
+<h3 id="seletor-universal-voce-pode-selecionar-tudo">Seletor Universal, você pode selecionar tudo<a class="anchor" href="#seletor-universal-voce-pode-selecionar-tudo">§</a>&nbsp;</h3>
+<p><code>p *</code> seleciona qualquer elemento dentro de todos os elementos <code>p</code></p>
+<h2 id="adjacent-sibling-selector">Adjacent Sibling Selector<a class="anchor" href="#adjacent-sibling-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-um-elemento-que-segue-diramente-um-outro-elemento">Seleciona um elemento que segue diramente um outro elemento<a class="anchor" href="#seleciona-um-elemento-que-segue-diramente-um-outro-elemento">§</a>&nbsp;</h3>
+<p><code>p + .intro</code> seleciona cada elemento que contenha a classe <code>intro</code> e que siga diretamente um <code>p</code></p>
+<h2 id="general-sibling-selector">General Sibling Selector<a class="anchor" href="#general-sibling-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-um-elemento-que-segue-outro-elemento">Seleciona um elemento que segue outro elemento<a class="anchor" href="#seleciona-um-elemento-que-segue-outro-elemento">§</a>&nbsp;</h3>
+<p><code>A ~ B</code> seleciona todos os elementos <code>B</code>que seguem um <code>A</code></p>
+<h2 id="child-selector">Child Selector<a class="anchor" href="#child-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-diratamente-os-filhos-de-um-elemento">Seleciona diratamente os filhos de um elemento<a class="anchor" href="#seleciona-diratamente-os-filhos-de-um-elemento">§</a>&nbsp;</h3>
+<p><code>A &gt; B</code> seleciona todos os <code>B</code> que são diretamente filhos de <code>A</code></p>
+<h2 id="first-child-pseudo-selector">First Child Pseudo-selector<a class="anchor" href="#first-child-pseudo-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-o-primeiro-filho-de-um-elemento">Seleciona o primeiro filho de um elemento<a class="anchor" href="#seleciona-o-primeiro-filho-de-um-elemento">§</a>&nbsp;</h3>
+<p><code>:first-child</code> seleciona todos os primeiros filhos
+<code>p:first-child</code> seleciona todos os primeiros filhos de elemento <code>p</code></p>
+<h2 id="only-child-pseudo-selector">Only Child Pseudo-selector<a class="anchor" href="#only-child-pseudo-selector">§</a>&nbsp;</h2>
+<h3 id="selecione-um-elemento-que-seja-o-unico-elemento-dentro-de-outro">Selecione um elemento que seja o único elemento dentro de outro<a class="anchor" href="#selecione-um-elemento-que-seja-o-unico-elemento-dentro-de-outro">§</a>&nbsp;</h3>
+<p><code>span:ony-child</code>irá selecionar os elementos <code>span</code>que são somente filhos de um outro elemento</p>
+<h2 id="last-child-pseudo-selector">Last Child Pseudo-selector<a class="anchor" href="#last-child-pseudo-selector">§</a>&nbsp;</h2>
+<h3 id="selecione-o-ultimo-elemento-de-um-outro-elemento">Selecione o último elemento de um outro elemento<a class="anchor" href="#selecione-o-ultimo-elemento-de-um-outro-elemento">§</a>&nbsp;</h3>
+<p><code>:last-child</code> seleciona todos os last-child
+<code>span:last-child</code> seleciona todos os last-child do span</p>
+<h2 id="nth-child-pseudo-selector">Nth Child Pseudo-selector<a class="anchor" href="#nth-child-pseudo-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-um-elemento-pela-sua-ordem">Seleciona um elemento pela sua ordem<a class="anchor" href="#seleciona-um-elemento-pela-sua-ordem">§</a>&nbsp;</h3>
+<p><code>p:nth-child(2)</code>seleciona o segundo <code>p</code></p>
+<h2 id="first-of-type-selector">First of Type Selector<a class="anchor" href="#first-of-type-selector">§</a>&nbsp;</h2>
+<h3 id="selecione-o-primeiro-elemento-de-um-tipo-especifico">Selecione o primeiro elemento de um tipo específico<a class="anchor" href="#selecione-o-primeiro-elemento-de-um-tipo-especifico">§</a>&nbsp;</h3>
+<p><code>span:first-of-type</code>seleciona o primeiro <code>span</code></p>
+<h2 id="nth-of-type-selector">Nth of Type Selector<a class="anchor" href="#nth-of-type-selector">§</a>&nbsp;</h2>
+<h3 id="seleciona-um-elemento-especifico-baseado-no-seu-tipo">Seleciona um elemento específico baseado no seu tipo.<a class="anchor" href="#seleciona-um-elemento-especifico-baseado-no-seu-tipo">§</a>&nbsp;</h3>
+<p><code>div:nth-of-type(2)</code> seleciona o segundo elemento de uma div</p>
+<h2 id="only-of-type-selector">Only Of Type Selector<a class="anchor" href="#only-of-type-selector">§</a>&nbsp;</h2>
+<h3 id="selecione-os-elementos-que-sao-de-apenas-um-tipo">Selecione os elementos que são de apenas um tipo<a class="anchor" href="#selecione-os-elementos-que-sao-de-apenas-um-tipo">§</a>&nbsp;</h3>
+<p><code>p span:only-of-type</code> seleciona um spam dentro do p se tiver somente um span nele</p>
+
+  </article>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

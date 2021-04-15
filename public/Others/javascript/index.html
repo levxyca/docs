@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title> Docs | Javascript </title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+  <ul id="breadcrumbs">
+    
+      
+      <li><a href="&#x2F;">Docs</a>&nbsp;&#8594;&nbsp;</li> 
+    
+      
+      <li><a href="&#x2F;Others&#x2F;">Others</a>&nbsp;&#8594;&nbsp;</li> 
+    
+  </ul>
+  <h1>Javascript</h1><em></em> 
+
+      </nav>
+
+      <main>
+      
+  <div id="taxonomies">
+    
+      <date>14.04.2021</date>
+       
+
+    
+    
+    
+  </div>
+
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+    
+  
+    
+    
+      
+      
+        
+      
+        
+      
+    
+      
+      
+    
+  
+
+  
+      <ul id="toc">
+        
+          <li><a href="/Others/javascript/#javascript">Javascript</a>
+          
+        </li>
+  
+          <li><a href="/Others/javascript/#hello-world">Hello World!</a>
+          
+        </li>
+  
+          <li><a href="/Others/javascript/#introducao">Introdução</a>
+          <ul>        
+            
+            <li><a href="/Others/javascript/#variaveis">Variáveis</a></li>
+          
+            <li><a href="/Others/javascript/#tipos-de-dados">Tipos de dados</a></li>
+          
+            <li><a href="/Others/javascript/#operadores-aritmeticos">Operadores Aritméticos</a></li>
+          
+            <li><a href="/Others/javascript/#operadores-logicos">Operadores Lógicos</a></li>
+          
+            <li><a href="/Others/javascript/#comparacao">Comparação</a></li>
+          
+            <li><a href="/Others/javascript/#boolean">Boolean</a></li>
+          
+            <li><a href="/Others/javascript/#truthy-e-falsy">Truthy e Falsy</a></li>
+          
+            <li><a href="/Others/javascript/#estruturas-condicionais">Estruturas Condicionais</a></li>
+          
+            <li><a href="/Others/javascript/#funcoes">Funções</a></li>
+          
+            <li><a href="/Others/javascript/#objetos">Objetos</a></li>
+          
+            <li><a href="/Others/javascript/#arrays-e-loops">Arrays e Loops</a></li>
+          
+            <li><a href="/Others/javascript/#atribuicao-e-ternario">Atribuição e Ternário</a></li>
+          
+            <li><a href="/Others/javascript/#escopo-1">Escopo</a></li>
+          
+         </ul>
+  
+        </li>
+  
+          <li><a href="/Others/javascript/#dom">DOM</a>
+          <ul>        
+            
+            <li><a href="/Others/javascript/#introducao-1">Introdução</a></li>
+          
+            <li><a href="/Others/javascript/#selecao-de-elementos">Seleção de elementos</a></li>
+          
+         </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+  <article>
+    <h1 id="javascript">Javascript<a class="anchor" href="#javascript">§</a>&nbsp;</h1>
+<hr />
+<p>Linguagem de programação interpretada</p>
+<h1 id="hello-world">Hello World!<a class="anchor" href="#hello-world">§</a>&nbsp;</h1>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">console.log(&#39;Hello World!&#39;);
+</span></code></pre><h1 id="introducao">Introdução<a class="anchor" href="#introducao">§</a>&nbsp;</h1>
+<p>Qual o melhor lugar para colocar o seu script? Você pode coloca-lo em qualquer lugar, como no body, no head. Normalmente as pessoas gostam de colocar o script como último elemento, antes de fechar a tag body, por questão de carregamento da página.</p>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</span></code></pre><h2 id="variaveis">Variáveis<a class="anchor" href="#variaveis">§</a>&nbsp;</h2>
+<p>Responsáveis por guardar dados na memória.</p>
+<ul>
+<li>Pode iniciar com <em>let o</em>u <em>var</em></li>
+<li>Caso tenha um valor fixo, pode criar uma constante com <em>const</em></li>
+<li>Não precisamos definir o tipo da variável</li>
+<li>Palavra Chave → Nome → Valor</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var nome = &#39;Leticia&#39;;
+let idade = 18;
+const querAprender = true;
+
+var pessoas = [&#39;Diego&#39;, &#39;Gabriel&#39;, &#39;Lucas&#39;];
+</span></code></pre><h3 id="virgula">Vírgula<a class="anchor" href="#virgula">§</a>&nbsp;</h3>
+<ul>
+<li>Você pode usar vírgula para criar mais de uma variável</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var nome = &#39;Leticia&#39;,
+    idade = 18,
+    querAprender = true;
+</span></code></pre><h3 id="variavel-sem-valor">Variável sem valor<a class="anchor" href="#variavel-sem-valor">§</a>&nbsp;</h3>
+<ul>
+<li>Você também pode declarar e não atribuir nenhum valor inicialmente</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var semValor;
+// retorna undefined
+</span></code></pre><h3 id="nome-das-variaveis">Nome das variáveis<a class="anchor" href="#nome-das-variaveis">§</a>&nbsp;</h3>
+<ul>
+<li>Case sensitive</li>
+<li>Camel case</li>
+<li>Não pode usar palavras reservadas</li>
+</ul>
+<h2 id="tipos-de-dados">Tipos de dados<a class="anchor" href="#tipos-de-dados">§</a>&nbsp;</h2>
+<ul>
+<li>São primitivos, exceto os objetos.</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var nome = &#39;Leticia&#39;; // String
+var idade = 18; // Number
+var possuiFaculdade = false; // Boolean
+var time; // Undefined
+var comida = null; // Null
+var simbolo = Symbol() // Symbol
+var novoObjeto = {} // Object
+</span></code></pre><h3 id="verificando-o-tipo-de-dado">Verificando o tipo de dado<a class="anchor" href="#verificando-o-tipo-de-dado">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var idade = 18;
+console.log(typeof idade);
+// retorna number
+</span></code></pre><h3 id="strings">Strings<a class="anchor" href="#strings">§</a>&nbsp;</h3>
+<p>Você consegue:</p>
+<ol>
+<li>somar uma tring</li>
+<li>concatenar palavras</li>
+<li>somar números com strings</li>
+</ol>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var nome = &#39;Leticia&#39;;
+var sobrenome = &#39;Leonardo&#39;;
+var nomeCompleto = nome + &#39; &#39; + sobrenome;
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var coposAgua = 5;
+var frase = &#39;Leticia bebeu &#39; + coposAgua + &#39; copos de água&#39;;
+</span></code></pre><h3 id="template-string">Template String<a class="anchor" href="#template-string">§</a>&nbsp;</h3>
+<ul>
+<li>Expressões / variáveis dentro de ${}</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var coposAgua = 1000;
+var frase1 = &#39;Leticia bebeu &#39; + coposAgua + &#39; copos de água&#39;;
+// Utilizando Template String
+var frase2 = `Leticia bebeu ${coposAgua} copos de água`; 
+</span></code></pre><h2 id="operadores-aritmeticos">Operadores Aritméticos<a class="anchor" href="#operadores-aritmeticos">§</a>&nbsp;</h2>
+<ul>
+<li>Multiplicação e divisão, depois por soma e subtração</li>
+<li>Parênteses para priorizar uma expressão</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var soma = 100 + 50; // 150
+var subtracao = 100 - 50; // 50
+var multiplicacao = 100 * 2; // 200
+var divisao = 100 / 2; // 50
+var expoente = 2 ** 4; // 16
+var modulo = 14 % 5; // 4
+</span></code></pre><h3 id="operadores-aritmeticos-em-strings">Operadores Aritméticos em Strings<a class="anchor" href="#operadores-aritmeticos-em-strings">§</a>&nbsp;</h3>
+<ul>
+<li>É possível verificar se uma variável é NaN ou não com a função isNaN()</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var soma = &#39;100&#39; + 50; // 10050
+var subtracao = &#39;100&#39; - 50; // 50
+var multiplicacao = &#39;100&#39; * &#39;2&#39;; // 200
+var divisao = &#39;Comprei 10&#39; / 2; // NaN (Not a Number)
+</span></code></pre><h3 id="incremento-e-decremento">Incremento e Decremento<a class="anchor" href="#incremento-e-decremento">§</a>&nbsp;</h3>
+<ul>
+<li>Mesma coisa para o decremento --decremento</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var incremento = 5;
+console.log(incremento++); // 5
+console.log(incremento); // 6
+
+var incremento2 = 5;
+console.log(++incremento2); // 6
+console.log(incremento2); // 6
+</span></code></pre><h2 id="operadores-logicos">Operadores Lógicos<a class="anchor" href="#operadores-logicos">§</a>&nbsp;</h2>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">&amp;&amp; // and
+|| // or
+! // not
+</span></code></pre><h2 id="comparacao">Comparação<a class="anchor" href="#comparacao">§</a>&nbsp;</h2>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">(==) // iguais.
+
+(!=) // não iguais.
+
+(===) // iguais e do mesmo tipo.
+
+(!==) // não iguais e/ou não do mesmo tipo
+
+(&gt;) // maior que
+
+(&gt;=) // maior ou igual
+
+(&lt;) // menor que
+
+(&lt;=) // menor ou igual
+</span></code></pre><h2 id="boolean">Boolean<a class="anchor" href="#boolean">§</a>&nbsp;</h2>
+<ul>
+<li><em>false</em> ou <em>true</em></li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var possuiCurso = true;
+var possuiGraduacao = false;
+</span></code></pre><h2 id="truthy-e-falsy">Truthy e Falsy<a class="anchor" href="#truthy-e-falsy">§</a>&nbsp;</h2>
+<ul>
+<li>!! verifica a expressão</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">// Falsy
+if(false)
+if(0) // ou -0
+if(NaN)
+if(null)
+if(undefined)
+if(&#39;&#39;) // ou &quot;&quot; ou ``
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">// Truthy
+if(true)
+if(1)
+if(&#39; &#39;)
+if(&#39;andre&#39;)
+if(-5)
+if({})
+</span></code></pre><h2 id="estruturas-condicionais">Estruturas Condicionais<a class="anchor" href="#estruturas-condicionais">§</a>&nbsp;</h2>
+<h3 id="condicionais-if-e-else">Condicionais If e Else<a class="anchor" href="#condicionais-if-e-else">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var estouTriste = true;
+
+if(estouTriste) {
+  console.log(&#39;Estou realmente triste&#39;);
+} else {
+  console.log(&#39;Não estou triste, olha só&#39;);
+}
+// retorna Estou realmente triste e não executa o else
+</span></code></pre><h3 id="condicionais-else-if">Condicionais Else If<a class="anchor" href="#condicionais-else-if">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var a = 1,
+		b = 2;
+
+if(a &lt; b) {
+	console.log(&#39;a é menor que b&#39;);
+} else if (a = b) {
+	console.log(&#39;a é igual a b&#39;);
+} else {
+	console.log(&#39;Não é nenhuma das opções&#39;);
+}
+</span></code></pre><h3 id="switch">Switch<a class="anchor" href="#switch">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var corFavorita = &#39;Azul&#39;;
+
+switch (corFavorita) {
+  case &#39;Azul&#39;:
+    console.log(&#39;Olhe para o céu.&#39;);
+    break;
+  case &#39;Vermelho&#39;:
+    console.log(&#39;Olhe para rosas.&#39;);
+    break;
+  case &#39;Amarelo&#39;:
+    console.log(&#39;Olhe para o sol.&#39;);
+    break;
+  default:
+    console.log(&#39;Feche os olhos&#39;);
+}
+</span></code></pre><h2 id="funcoes">Funções<a class="anchor" href="#funcoes">§</a>&nbsp;</h2>
+<ul>
+<li>Bloco de código que pode ser executado e reutilizado</li>
+<li>Parênteses () executam uma função</li>
+<li>Ao criar uma função, você pode definir parâmetros</li>
+<li>Ao executar uma função, você pode passar argumentos</li>
+<li>Separar por vírgula cada parâmetro</li>
+<li>Se não executarmos a função nada que estiver dentro dela vai acontecer</li>
+<li>Quando não definimos o return, ela irá retornar <em>undefined</em></li>
+<li>Pode retornar qualquer tipo de dado e até outras funções</li>
+<li>JS 'move' todas as funções declaradas para a memória</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">function areaQuadrado(lado) {
+  return lado * lado;
+}
+
+areaQuadrado(4) // 16
+areaQuadrado(5) // 25
+areaQuadrado(2) // 4
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">// peso e altura são os parâmetros
+function imc(peso, altura) {
+  const imc = peso / (altura ** 2);
+  return imc;
+}
+
+imc(60, 1.50) // g0 e 1.50 são os argumentos
+</span></code></pre><h3 id="argumentos-podem-ser-funcoes">Argumentos podem ser funções<a class="anchor" href="#argumentos-podem-ser-funcoes">§</a>&nbsp;</h3>
+<ul>
+<li>Geralmente são funções que ocorrem após algum evento</li>
+<li>Anônimas são aquelas em que o nome da função não é definido</li>
+<li>function() {} ou () =&gt; {}</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">addEventListener(&#39;click&#39;, function() {
+  console.log(&#39;Clicou&#39;);
+});
+// A função possui dois argumentos
+// Primeiro é a string &#39;click&#39;
+// Segundo é uma função anônima
+</span></code></pre><h3 id="escopo">Escopo<a class="anchor" href="#escopo">§</a>&nbsp;</h3>
+<p>Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora dele.</p>
+<h3 id="escopo-lexico">Escopo Léxico<a class="anchor" href="#escopo-lexico">§</a>&nbsp;</h3>
+<p>Funções conseguem acessar variáveis que foram criadas no contexto pai, por exemplo, quando temos uma função dentro de outra função.</p>
+<h2 id="objetos">Objetos<a class="anchor" href="#objetos">§</a>&nbsp;</h2>
+<ul>
+<li>Conjunto de variáveis e funções, que são chamadas de propriedades e métodos</li>
+<li><strong>This</strong> irá fazer uma referência ao próprio objeto</li>
+<li>O objeto herda propriedades e métodos do objeto que foi utilizado para criar o mesmo</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var pessoa = {
+  nome: &#39;Leticia&#39;,
+  idade: 18,
+}
+
+pessoa.nome; // &#39;Leticia&#39;
+pessoa.idade; // 18
+
+//DOT NOTATION SET
+pessoa.idade = 19;
+pessoa.idade; //19
+
+//ADICIONAR PROPRIEDADES E MÉTODOS
+pessoa.possuiFaculdade = true;
+</span></code></pre><h3 id="metodos">Métodos<a class="anchor" href="#metodos">§</a>&nbsp;</h3>
+<ul>
+<li>É uma propriedade que possui uma função no local do seu valor</li>
+<li>Abreviação de <strong>area: function() {}</strong> para <strong>area() {}</strong>, no ES6+</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var quadrado = {
+  lados: 4,
+  area: function(lado) {
+    return lado * lado;
+  },
+}
+
+quadrado.lados; // 4
+quadrado.area(5); // 25
+</span></code></pre><h2 id="arrays-e-loops">Arrays e Loops<a class="anchor" href="#arrays-e-loops">§</a>&nbsp;</h2>
+<h3 id="array">Array<a class="anchor" href="#array">§</a>&nbsp;</h3>
+<p>Servem para guardarmos diferentes valores em uma única variável</p>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var frutas = [&#39;Banana&#39;, &#39;Abacaxi&#39;, &#39;Maça&#39;];
+
+videoGames[0] // Banana
+videoGames[2] // Maça
+</span></code></pre><h3 id="for-loop">For Loop<a class="anchor" href="#for-loop">§</a>&nbsp;</h3>
+<p>Fazem algo repetidamente até que uma condição seja atingida.</p>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">for (var n = 0; n &lt; 10; n++) {
+  console.log(n);
+}
+// Retorna de 0 a 9 no console
+</span></code></pre><h3 id="while-loop">While Loop<a class="anchor" href="#while-loop">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var i = 0;
+while (i &lt; 10) {
+  console.log(i);
+  i++;
+}
+// Retorna de 0 a 9 no console
+</span></code></pre><h3 id="arrays-e-loops-1">Arrays e Loops<a class="anchor" href="#arrays-e-loops-1">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var frutas = [&#39;Banana&#39;, &#39;Abacaxi&#39;, &#39;Maça&#39;];
+for (var i = 0; i &lt; frutas.length; i++) {
+  console.log(frutas[i]);
+}
+</span></code></pre><h3 id="break">Break<a class="anchor" href="#break">§</a>&nbsp;</h3>
+<p>Faz com que o loop pare.</p>
+<h3 id="foreach">forEach<a class="anchor" href="#foreach">§</a>&nbsp;</h3>
+<p>Executa uma função para cada item da Array.</p>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var frutas = [&#39;Banana&#39;, &#39;Abacaxi&#39;, &#39;Maça&#39;];
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+// O argumento item será atribuído dinamicamente
+</span></code></pre><h2 id="atribuicao-e-ternario">Atribuição e Ternário<a class="anchor" href="#atribuicao-e-ternario">§</a>&nbsp;</h2>
+<h3 id="comentarios">Comentários<a class="anchor" href="#comentarios">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">// Comentário de uma linha
+
+/*
+Comentário
+com diversas
+linhas
+*/
+</span></code></pre><h3 id="operadores-de-atribuicao-abreviados">Operadores de atribuição abreviados<a class="anchor" href="#operadores-de-atribuicao-abreviados">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">x += y;
+x -= y;
+x *= y;
+x /= y;
+x %= y;
+x **= y;
+</span></code></pre><h3 id="operador-ternario">Operador Ternário<a class="anchor" href="#operador-ternario">§</a>&nbsp;</h3>
+<p>Abreviação com <em>if</em> e <em>else</em></p>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">var numero = 1;
+var verificaNumero = (numero &gt;= 2) ? &#39;É maior&#39; : &#39;Não é maior&#39;;
+console.log(podeBeber) // Pode beber
+
+// condição ? true : false
+</span></code></pre><h2 id="escopo-1">Escopo<a class="anchor" href="#escopo-1">§</a>&nbsp;</h2>
+<ul>
+<li>Variáveis declaradas dentro de funções não são acessadas fora das mesmas.</li>
+<li>Declarar variáveis sem a palavra chave <em>var</em>, <em>const</em> ou <em>let</em>, cria uma variável global.</li>
+<li>Variáveis criadas com <em>var</em>, vazam o bloco.</li>
+<li><em>let</em> e <em>const</em> respeitam o escopo de bloco.</li>
+<li>{} criam um escopo de bloco.</li>
+</ul>
+<h1 id="dom">DOM<a class="anchor" href="#dom">§</a>&nbsp;</h1>
+<h2 id="introducao-1">Introdução<a class="anchor" href="#introducao-1">§</a>&nbsp;</h2>
+<p>É uma interface que representa documentos HTML e XML através de objetos</p>
+<h3 id="window-e-document">Window e Document<a class="anchor" href="#window-e-document">§</a>&nbsp;</h3>
+<ul>
+<li>Principais objetos do DOM</li>
+<li>window é objeto global</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">window.alert(&#39;Isso é um alerta&#39;);
+alert(&#39;Isso é um alerta&#39;); // Funciona
+
+document.querySelector(&#39;h1&#39;); // Seleciona o primeiro h1
+document.body; // Retorna o body
+</span></code></pre><h3 id="node">Node<a class="anchor" href="#node">§</a>&nbsp;</h3>
+<ul>
+<li>Toda tag html é representada pelo objeto Element</li>
+<li>Element é um tipo de objeto Node</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-jsx" data-lang="jsx"><span style="color:#e6e1dc;">const titulo = document.querySelector(&#39;h1&#39;);
+
+titulo.innerText; // retorna o texto;
+titulo.classList; // retorna as classes;
+titulo.id; // retorna o id;
+titulo.offsetHeight; // retorna a altura do elemento;
+
+titulo.addEventListener(&#39;click&#39;, callback);
+// ativa a função callback ao click no titulo
+</span></code></pre><h2 id="selecao-de-elementos">Seleção de elementos<a class="anchor" href="#selecao-de-elementos">§</a>&nbsp;</h2>
+<ul>
+<li><strong>getElementById</strong> seleciona e retorna elementos do DOM</li>
+<li><strong>getElementsByClassName</strong> e <strong>getElementsByTagName</strong> selecionam e retornam uma lista de elementos do DOM (automaticamente atualizada)</li>
+<li><strong>querySelector</strong> retorna o primeiro elemento que combinar com o seu seletor CSS</li>
+<li><strong>querySelectorAll</strong> retorna todos os elementos compatíveis com o seletor CSS em uma NodeList (estática)</li>
+<li><strong>HTMLCollection</strong> e <strong>NodeList</strong> são array-like, parecem uma array mas não são. O método de Array <strong>forEach()</strong> por exemplo, existe apenas em NodeList.</li>
+</ul>
+
+  </article>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

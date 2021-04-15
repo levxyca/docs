@@ -1,0 +1,11 @@
+base_url = "/"
+compile_sass = true
+title = "Docs"
+highlight_code = true
+highlight_theme = "kronuz"
+build_search_index = true
+
+taxonomies = [
+    {name = "tags", rss = true},
+    {name = "authors", rss = true},
+]

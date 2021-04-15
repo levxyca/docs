@@ -1,0 +1,68 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+
+{% block nav %}
+  <ul id="breadcrumbs">
+    {% for parent in page.ancestors %}
+      {% set s = get_section(path=parent, include_pages=false) %}
+      <li><a href="{{s.permalink}}">{{s.title}}</a>&nbsp;&#8594;&nbsp;</li> 
+    {% endfor %}
+  </ul>
+  <h1>{{ page.title }}</h1><em>{{ page.description | safe }}</em> 
+{% endblock nav %}
+
+{% block content %}
+  <div id="taxonomies">
+    {% if page.date %}
+      <date>{{ page.date | date(format="%d.%m.%Y") }}</date>
+    {% endif %}   
+
+    {% if page.taxonomies.authors %}
+      <ul>
+      {% for author in page.taxonomies.authors %}
+        <li><a href="{{ get_taxonomy_url(kind="authors", name=author) | safe }}" >{{ author }}</a></li>
+      {% endfor %}
+     </ul>
+    {% endif %}
+    
+    {% if page.taxonomies.tags %}
+      <ul>
+      {% for tag in page.taxonomies.tags %}
+        <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  {% set_global header_count = 0 %}
+  {% for h2 in page.toc %}
+    {% set_global header_count = header_count + 1 %}
+    {% for h3 in h2.children %}
+      {% set_global header_count = header_count + 1 %}
+      {% for h4 in h3.children %}
+        {% set_global header_count = header_count + 1 %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if header_count > 4 %}
+      <ul id="toc">
+        {% for h2 in page.toc %}
+          <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+          {% if h2.children %}<ul>        
+            {% for h3 in h2.children %}
+            <li><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
+          {% endfor %}
+         </ul>
+  {% endif %}
+        </li>
+  {% endfor %}
+      </ul>
+  {% endif %}
+
+  <article>
+    {{ page.content | safe }}
+  </article>
+{% endblock content %}
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title> Docs | Python </title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+  <ul id="breadcrumbs">
+    
+      
+      <li><a href="&#x2F;">Docs</a>&nbsp;&#8594;&nbsp;</li> 
+    
+      
+      <li><a href="&#x2F;Others&#x2F;">Others</a>&nbsp;&#8594;&nbsp;</li> 
+    
+  </ul>
+  <h1>Python</h1><em></em> 
+
+      </nav>
+
+      <main>
+      
+  <div id="taxonomies">
+    
+      <date>14.04.2021</date>
+       
+
+    
+    
+    
+  </div>
+
+  
+  
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+      
+        
+      
+        
+      
+    
+  
+
+  
+      <ul id="toc">
+        
+          <li><a href="/Others/python/#python">Python</a>
+          <ul>        
+            
+            <li><a href="/Others/python/#comecando-com-o-basico">Começando com o básico</a></li>
+          
+            <li><a href="/Others/python/#estruturas-de-controle">Estruturas de controle</a></li>
+          
+         </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+  <article>
+    <h1 id="python">Python<a class="anchor" href="#python">§</a>&nbsp;</h1>
+<hr />
+<p>Curso usado: Python para zumbis</p>
+<ul>
+<li>Programar == Lógica + Sintaxe</li>
+<li>Python == foco em Lógica Básica de programação</li>
+</ul>
+<h2 id="comecando-com-o-basico">Começando com o básico<a class="anchor" href="#comecando-com-o-basico">§</a>&nbsp;</h2>
+<h3 id="hello-world-em-python">Hello World em Python<a class="anchor" href="#hello-world-em-python">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;Hello World!&#39;</span><span style="color:#e6e1dc;">)
+</span></code></pre>
+<ul>
+<li>Letras maiusculas e minusculas em python são comandos diferentes, atente-se a isso.</li>
+</ul>
+<h3 id="operacoes-basicas">Operações básicas<a class="anchor" href="#operacoes-basicas">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#a5c261;">2 </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">2 </span><span style="color:#e6e1dc;">Adição
+</span><span style="color:#a5c261;">3 </span><span style="color:#cc7833;">* </span><span style="color:#a5c261;">4 </span><span style="color:#e6e1dc;">Multiplicação
+</span><span style="color:#a5c261;">3 </span><span style="color:#cc7833;">/ </span><span style="color:#a5c261;">2 </span><span style="color:#e6e1dc;">Divisão
+</span><span style="color:#a5c261;">2 </span><span style="color:#cc7833;">** </span><span style="color:#a5c261;">10 </span><span style="color:#e6e1dc;">Exponenciação
+</span><span style="color:#a5c261;">2 </span><span style="color:#cc7833;">% </span><span style="color:#a5c261;">3 </span><span style="color:#e6e1dc;">Resto da Divisão
+</span></code></pre><h3 id="observando-tipos-de-classes">Observando tipos de classes<a class="anchor" href="#observando-tipos-de-classes">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#da4939;">type</span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">42</span><span style="color:#e6e1dc;">)
+</span><span style="color:#da4939;">type</span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">3.1223</span><span style="color:#e6e1dc;">)
+</span><span style="color:#da4939;">type</span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;Hello&#39;</span><span style="color:#e6e1dc;">)
+...
+</span></code></pre><h3 id="variaveis">Variáveis<a class="anchor" href="#variaveis">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">42
+</span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">&#39;Hello&#39;
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#da4939;">id</span><span style="color:#e6e1dc;">(a)
+</span><span style="color:#da4939;">id</span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">42</span><span style="color:#e6e1dc;">)
+</span><span style="color:#da4939;">id</span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;abacate&#39;</span><span style="color:#e6e1dc;">)
+</span><span style="color:#da4939;">id</span><span style="color:#e6e1dc;">(b)
+</span></code></pre>
+<ul>
+<li>As variáveis em python são todas objetos</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#a5c261;">2 </span><span style="color:#cc7833;">* </span><span style="color:#e6e1dc;">a
+c </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">3
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">2
+</span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">3
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(a </span><span style="color:#cc7833;">+ </span><span style="color:#e6e1dc;">b)
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">&#39;abacate&#39;
+</span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">&#39; e banana&#39;
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(a </span><span style="color:#cc7833;">+ </span><span style="color:#e6e1dc;">b)
+</span></code></pre>
+<ul>
+<li>Em python as strings podem ser somadas</li>
+<li>Uma dica interessante, muitas vezes nós não sabemos todas as possibilidades que temos com aquele elemento, para isso , nós podemos digitar, por exemplo: dir('abacate') e ele vai nos listar vários comandos que podemos usar</li>
+<li>Também podemos pedir uma colinha pra saber o que um comando faz, então seguindo o exemplo acima: help('abacate'.upper), no upper você troca por qualquer outra comando que queira.</li>
+</ul>
+<h3 id="operadores-relacionais-e-logicos">Operadores relacionais e lógicos<a class="anchor" href="#operadores-relacionais-e-logicos">§</a>&nbsp;</h3>
+<p>Esses operadores nos ajudam a fazer comparações e igualdade entre as variáveis.</p>
+<h4 id="relacionais">Relacionais<a class="anchor" href="#relacionais">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&gt; </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Maior que
+a </span><span style="color:#cc7833;">&lt; </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Menor que
+a </span><span style="color:#cc7833;">== </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Igual a
+a </span><span style="color:#cc7833;">!= </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Diferente de
+a </span><span style="color:#cc7833;">&gt;= </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Maior ou igual
+a </span><span style="color:#cc7833;">&lt;= </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Menor ou igual
+</span></code></pre><h4 id="logicos">Lógicos<a class="anchor" href="#logicos">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&gt;= </span><span style="color:#a5c261;">6 </span><span style="color:#cc7833;">and </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">&lt;= </span><span style="color:#a5c261;">20 </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">As duas condições precisam ser verdadeiras
+a </span><span style="color:#cc7833;">== </span><span style="color:#a5c261;">42 </span><span style="color:#cc7833;">or </span><span style="color:#e6e1dc;">b </span><span style="color:#cc7833;">== </span><span style="color:#a5c261;">42 </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Uma das condições precisam ser verdadeiras
+</span></code></pre><h3 id="imprimindo-nossos-dados-na-tela">Imprimindo nossos dados na tela<a class="anchor" href="#imprimindo-nossos-dados-na-tela">§</a>&nbsp;</h3>
+<h4 id="marcadores">Marcadores<a class="anchor" href="#marcadores">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">42
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;O número é&#39;</span><span style="color:#e6e1dc;">, a)
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">42
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;O número&#39;</span><span style="color:#e6e1dc;">, a, </span><span style="color:#a5c261;">&#39;é muito legal&#39;</span><span style="color:#e6e1dc;">)
+</span></code></pre>
+<ul>
+<li>Quando temos essa situações de colocar uma variável para ser impressa no meio, é legal utilizar os marcadores</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">42
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;O número </span><span style="color:#6d9cbe;">%d</span><span style="color:#a5c261;"> é muito legal&#39; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">a)
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">d </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Inteiro
+</span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">s </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">String
+</span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">f </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Float
+</span><span style="color:#cc7833;">%</span><span style="color:#a5c261;">.2</span><span style="color:#e6e1dc;">f </span><span style="color:#cc7833;">| </span><span style="color:#e6e1dc;">Para escolher o número de casas que vai mostrar na tela
+</span></code></pre><h3 id="entendendo-conceitos-sobre-linguagem-dinamica-e-tipagem-forte">Entendendo conceitos sobre linguagem dinâmica e tipagem forte<a class="anchor" href="#entendendo-conceitos-sobre-linguagem-dinamica-e-tipagem-forte">§</a>&nbsp;</h3>
+<h4 id="dinamica-forte-e-multipla">Dinâmica, forte e múltipla<a class="anchor" href="#dinamica-forte-e-multipla">§</a>&nbsp;</h4>
+<ul>
+<li>Quando nós temos uma varivável que assumir types diferentes, nós chamamos de variável dinâmicamente tipada, que é o caso do python</li>
+<li>A linguagem também é fortemente tipada, pois nós temos uma checagem onde só podemos, por ezxmplo, somas variáveis de um mesmo type.</li>
+<li>Por fim, ela é múltipla, pois por exemplo, em C, se quisermos trocar o valor de a para b e vice versa, nós iremos precisar de uma variável auxiliar, já em python, podemos fazer apenas: a, b = b, a</li>
+</ul>
+<h4 id="teste-de-mesa-ou-simulacao">Teste de mesa ou Simulação<a class="anchor" href="#teste-de-mesa-ou-simulacao">§</a>&nbsp;</h4>
+<ul>
+<li>É executar algo passo a passo, no caso, linha a linha.</li>
+</ul>
+<h3 id="entrada-de-dados">Entrada de dados<a class="anchor" href="#entrada-de-dados">§</a>&nbsp;</h3>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">nome </span><span style="color:#cc7833;">= </span><span style="color:#da4939;">input </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;Digite o seu nome: &#39;</span><span style="color:#e6e1dc;">)
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(nome)
+</span></code></pre><pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">n1 </span><span style="color:#cc7833;">= </span><span style="font-style:italic;color:#6e9cbe;">int</span><span style="color:#e6e1dc;">(</span><span style="color:#da4939;">input </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;Digite o primeiro número: &#39;</span><span style="color:#e6e1dc;">))
+n2 </span><span style="color:#cc7833;">= </span><span style="font-style:italic;color:#6e9cbe;">int</span><span style="color:#e6e1dc;">(</span><span style="color:#da4939;">input </span><span style="color:#e6e1dc;">(</span><span style="color:#a5c261;">&#39;Digite o segundo: &#39;</span><span style="color:#e6e1dc;">))
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(n1 </span><span style="color:#cc7833;">+ </span><span style="color:#e6e1dc;">n2)
+</span></code></pre><h3 id="comentarios">Comentários<a class="anchor" href="#comentarios">§</a>&nbsp;</h3>
+<p>Para fazer comentários em python utilizamos a '#'</p>
+<h2 id="estruturas-de-controle">Estruturas de controle<a class="anchor" href="#estruturas-de-controle">§</a>&nbsp;</h2>
+<h3 id="condicoes">Condições<a class="anchor" href="#condicoes">§</a>&nbsp;</h3>
+<h4 id="if">If<a class="anchor" href="#if">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#cc7833;">if </span><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&gt; </span><span style="color:#e6e1dc;">b:
+    </span><span style="color:#cc7833;">pass
+</span></code></pre><h4 id="else">Else<a class="anchor" href="#else">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#cc7833;">if </span><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&gt; </span><span style="color:#e6e1dc;">b:
+    </span><span style="color:#cc7833;">pass
+else</span><span style="color:#e6e1dc;">:
+    </span><span style="color:#cc7833;">pass
+</span></code></pre><h4 id="elif">Elif<a class="anchor" href="#elif">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#cc7833;">if </span><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&gt; </span><span style="color:#e6e1dc;">b:
+    </span><span style="color:#cc7833;">pass
+elif </span><span style="color:#e6e1dc;">a </span><span style="color:#cc7833;">&lt; </span><span style="color:#e6e1dc;">b:
+    </span><span style="color:#cc7833;">pass
+elif </span><span style="color:#e6e1dc;">a = b:
+    </span><span style="color:#cc7833;">pass
+else</span><span style="color:#e6e1dc;">:
+    </span><span style="color:#cc7833;">pass
+</span></code></pre><h3 id="repeticoes">Repetições<a class="anchor" href="#repeticoes">§</a>&nbsp;</h3>
+<h4 id="while">While<a class="anchor" href="#while">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">1
+</span><span style="color:#cc7833;">while </span><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">&lt;= </span><span style="color:#a5c261;">3</span><span style="color:#e6e1dc;">:
+    </span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(x)
+    x </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">1
+</span></code></pre><h4 id="contadores">Contadores<a class="anchor" href="#contadores">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">1
+</span><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">1
+</span></code></pre><h4 id="acumuladores">Acumuladores<a class="anchor" href="#acumuladores">§</a>&nbsp;</h4>
+<p>A diferença entre um contador e um acumulador é que nos contadores o valor adicionado é constante e, nos acumuladores, variável.</p>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">n </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">1
+</span><span style="color:#e6e1dc;">soma </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">0
+</span><span style="color:#cc7833;">while </span><span style="color:#e6e1dc;">n </span><span style="color:#cc7833;">&lt;= </span><span style="color:#a5c261;">10</span><span style="color:#e6e1dc;">:
+    x </span><span style="color:#cc7833;">= </span><span style="font-style:italic;color:#6e9cbe;">int</span><span style="color:#e6e1dc;">(</span><span style="color:#da4939;">input</span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;Digite o </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;"> número: &quot; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">n))
+    soma </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">soma </span><span style="color:#cc7833;">+ </span><span style="color:#e6e1dc;">x
+    n </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">n  </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">1
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;Soma: </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;">&quot; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">soma)
+</span></code></pre><h4 id="break">Break<a class="anchor" href="#break">§</a>&nbsp;</h4>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">soma </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">0
+</span><span style="color:#cc7833;">while </span><span style="color:#6e9cbe;">True</span><span style="color:#e6e1dc;">:
+    x </span><span style="color:#cc7833;">= </span><span style="font-style:italic;color:#6e9cbe;">int</span><span style="color:#e6e1dc;">(</span><span style="color:#da4939;">input</span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;Digite o número (0 sai): &quot;</span><span style="color:#e6e1dc;">))
+    </span><span style="color:#cc7833;">if </span><span style="color:#e6e1dc;">x </span><span style="color:#cc7833;">== </span><span style="color:#a5c261;">0</span><span style="color:#e6e1dc;">:
+        </span><span style="color:#cc7833;">break
+    </span><span style="color:#e6e1dc;">soma </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">soma </span><span style="color:#cc7833;">+ </span><span style="color:#e6e1dc;">x
+</span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;Soma: </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;">&quot; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">soma)
+</span></code></pre><h4 id="repeticoes-aninhadas">Repetições aninhadas<a class="anchor" href="#repeticoes-aninhadas">§</a>&nbsp;</h4>
+<ul>
+<li>Exemplo com as tabuadas de 1 a 10:</li>
+</ul>
+<pre style="background-color:#383838;">
+<code class="language-python" data-lang="python"><span style="color:#e6e1dc;">tabuada </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">1
+</span><span style="color:#cc7833;">while </span><span style="color:#e6e1dc;">tabuada </span><span style="color:#cc7833;">&lt;= </span><span style="color:#a5c261;">10</span><span style="color:#e6e1dc;">:
+    n </span><span style="color:#cc7833;">= </span><span style="color:#a5c261;">1
+    </span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;Tabuada </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;">&quot; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">tabuada)
+    </span><span style="color:#cc7833;">while </span><span style="color:#e6e1dc;">n </span><span style="color:#cc7833;">&lt;= </span><span style="color:#a5c261;">10</span><span style="color:#e6e1dc;">:
+        </span><span style="color:#da4939;">print </span><span style="color:#e6e1dc;">(</span><span style="color:#c1be91;">&quot;</span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;"> x </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;"> = </span><span style="color:#6d9cbe;">%d</span><span style="color:#c1be91;">&quot; </span><span style="color:#cc7833;">%</span><span style="color:#e6e1dc;">(tabuada, n, tabuada </span><span style="color:#cc7833;">* </span><span style="color:#e6e1dc;">n))
+        n </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">n </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">1
+    </span><span style="color:#e6e1dc;">tabuada </span><span style="color:#cc7833;">= </span><span style="color:#e6e1dc;">tabuada </span><span style="color:#cc7833;">+ </span><span style="color:#a5c261;">1
+</span></code></pre>
+  </article>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+      <title>Docs</title>     
+      <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+      <nav>
+        <div id="subnav">
+          <form class="theme-selector">
+            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
+            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
+          </form>
+          <a href="/search">&#8981;</a>       
+        </div>
+
+      
+    <ul id="breadcrumbs">
+        <li><a href="/">Docs</a>&nbsp;&#8594;&nbsp;</li>
+        <li>Search</li>
+    </ul>
+    <h1>Search</h1>
+
+      </nav>
+
+      <main>
+      
+    <input id="search" type="search" placeholder="Search..">
+
+    <div class="search-results">
+        <div class="search-results__header"></div>
+        <ul class="search-results__items"></ul>
+    </div>
+
+    <script src="/elasticlunr.min.js"></script>
+    <script src="/search_index.en.js"></script>
+    <script src="/search.js"></script>
+
+      </main>
+
+      <script type="text/javascript" src="/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

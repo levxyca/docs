@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block nav %}
+    <ul id="breadcrumbs">
+        <li><a href="/">{{ config.title }}</a>&nbsp;&#8594;&nbsp;</li>
+        <li>{{ page.title }}</li>
+    </ul>
+    <h1>{{page.title}}</h1>
+{% endblock nav %}
+
+{% block content %}
+    <input id="search" type="search" placeholder="Search..">
+
+    <div class="search-results">
+        <div class="search-results__header"></div>
+        <ul class="search-results__items"></ul>
+    </div>
+
+    <script src="{{ get_url(path="elasticlunr.min.js") | safe }}"></script>
+    <script src="{{ get_url(path="search_index.en.js") | safe }}"></script>
+    <script src="{{ get_url(path="search.js") | safe }}"></script>
+{% endblock content %}
+
+
+

@@ -1,0 +1,33 @@
+  #search {
+    width: 100%;
+    padding: 1vw 0;
+    @include color(background, --bg-color,  $theme-light-bg-color);
+    @include color(color, --first-text-color, $theme-light-first-text-color);
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 1.625rem;
+    border:none;
+    border-bottom:2px solid #000;
+  }
+
+  .search-results {
+    &__header {
+      font-style: italic;
+      margin:1rem 0 0;
+    }
+
+    &__items {
+      list-style: decimal-leading-zero;
+    }
+
+    &__item {
+   margin:1rem 0;
+    }
+
+    &__teaser {
+      font-size: 1rem;
+    }
+  }
+
+
+
