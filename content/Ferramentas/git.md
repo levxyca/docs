@@ -1,10 +1,3 @@
-+++
-title = "Git"
-date = 2021-04-14 # or weight 
-description = ""
-insert_anchor_links = "right"
-+++
-
 # Git
 ---------
 Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
