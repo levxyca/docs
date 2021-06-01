@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #262626;
   font-family: "Fira Mono", monospace;
@@ -86,3 +87,23 @@ a:hover {
 .none {
   display: none;
 }
+=======
+
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: #fafafa;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.content {
+  margin-left: 250px;
+}
+>>>>>>> b851e66feb289623b92b185f0277f94f0476c777

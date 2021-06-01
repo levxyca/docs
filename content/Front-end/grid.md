@@ -1,8 +1,15 @@
 +++
+<<<<<<< HEAD:content/Front-end/grid.md
 title = "Grid Layout"
 date = 2021-04-14 # or weight 
 description = ""
 insert_anchor_links = "right"
+=======
+title = "Grid"
+sort_by = "date"
+template = "docs.html"
+page_template = "docs-page.html"
+>>>>>>> b851e66feb289623b92b185f0277f94f0476c777:docs/Front-end/grid.md
 +++
 
 # Grid Container
