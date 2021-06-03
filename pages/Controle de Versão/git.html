@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__header">
+        <header class="header">
+          <h1 class="header__title"><a href="../../index.html">Docs</a></h1>
+        </header>
+        <aside class="aside">
+          <nav class="aside__navegacao">
+            <ul>
+              <li class="aside__navegacao-item">
+                <img
+                  src="../../img/seta.png"
+                  class="aside__navegacao-item-seta"
+                /><a href="#">Controle de Versão</a>
+              </li>
+              <ul class="submenu none">
+                <li class="aside__navegacao-submenu"><a href="git.html">Git</a></li>
+                <li class="aside__navegacao-submenu"><a href="github.html">Github</a></li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+      <main class="main">
+        <h1 class="main__title">Git</h1>
+        <hr />
+        <p class="main__p">
+          Git é um sistema de controle de versões distribuído, usado
+          principalmente no desenvolvimento de software, mas pode ser usado para
+          registrar o histórico de edições de qualquer tipo de arquivo.
+        </p>
+        <h2 class="main__subtitle">Funcionalidades</h2>
+        <h3 class="main__subtitle-2">Histórico</h3>
+        <ul class="main__list">
+          <li class="main__list-item">Alternar entre as versões</li>
+          <li class="main__list-item">
+            Saber que existe um &quot;plano B&quot; caso as alterações não deem
+            certo
+          </li>
+        </ul>
+        <h3 class="main__subtitle-2">Trabalho em equipe</h3>
+        <ul class="main__list">
+          <li class="main__list-item">
+            Desenvolvimento em paralelo em diferentes ambientes
+          </li>
+        </ul>
+        <h3 class="main__subtitle-2">Ramificação</h3>
+        <ul class="main__list">
+          <li class="main__list-item">Possibilidade de criar várias versões a partir de um ponto</li>
+          <li class="main__list-item">
+            Juntar as funcionalidades/mudanças após finalizadas
+          </li>
+        </ul>
+        <h3 class="main__subtitle-2">Rastreabilidade</h3>
+        <ul class="main__list">
+          <li class="main__list-item">Identificar em que ponto a mudança foi feita</li>
+          <li class="main__list-item">
+            Identificar o responsável pela mudança
+          </li>
+        </ul> 
+        <h2 class="main__subtitle">Tipos de controle de versão</h2>
+        <h3 class="main__subtitle-2"">Centralizado</h3>
+        <ul class="main__list">
+            <li class="main__list-item">
+              Servidor centralizado que possui todo o histórico
+            </li>
+            <li class="main__list-item">
+              Padrão durante muitos anos
+            </li>
+        </ul>
+        <h3 class="main__subtitle-2">Distribuído</h3>
+        <ul class="main__list">
+          <li class="main__list-item">
+            Cada computador possui uma cópia do repositório
+          </li>
+          <ul class="main__list">
+            <li class="main__list-item">
+              Alterações rápidas e locais
+            </li>
+            <li class="main__list-item">
+                Réplica de repositórios caso o central se perca
+            </li>
+          </ul>
+        </ul>
+        <h2 class="main__subtitle">Comandos Básicos</h2>
+        <h3 class="main__subtitle-2">Configurações do usuário</h3>
+        <pre class="main__code"><code class="main__code-bloco">
+            git config --global user.name "Seu nome"
+            git config --global user.email "Seu email"
+        </code></pre>
+        <p class="main__p">
+          Caso queira ver se as suas configurações estão corretas, você
+          pode listar elas:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git config --list
+        </code></pre>
+        <h3 class="main__subtitle-2">
+          Criação de um repositório local
+        </h3>
+        <p class="main__p">
+          Primeiro, crie uma pasta para o projeto e em seguida entre na
+          pasta via comando no terminal.
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          cd nomedapasta
+        </code></pre>
+        <p class="main__p">
+          Para listar o que tem na pasta via comando:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          dir
+        </code></pre>
+        <p class="main__p">
+          Inicializando o repositório:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git init
+        </code></pre>
+        <p class="main__p">
+          Caso precise forçar a listagem de arquivos ocultos:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          dir -a
+        </code></pre>
+        <p class="main__p">
+          Após a criação do repositório, ele vai mostrar um master que é
+          uma branch, ou também pode ser chamada de ramificação.
+        </p>
+        <p class="main__p">
+          &quot;Master&quot; é a branch principal do projeto quando um
+          repositório é criado.
+        </p>
+        <p class="main__p">
+          Nesse primeiro momento, como só temos ela, ela é nossa branch base e a
+          partir dela podemos criar novas branches.
+        </p>
+        <p class="main__p">
+          Quando listamos os arquivos ocultos, encontramos um arquivo
+          &quot;.git&quot; que guarda todas as informações do repositório, como
+          se fosse um banco de dados.
+        </p>
+        <p class="main__p">
+          Ainda é válido ressaltar que o repositório não precisa estar vazio
+          para ser inicializado. Caso queira iniciar um já coma rquivos dentro é
+          só seguir mesmos passos de anteriormente.
+        </p>
+        <p class="main__p">
+          A partir do momento que você inicializa o repositório já se pode
+          começar a versionar o seu projeto.
+        </p>
+        <h3 class="main__subtitle-2">
+          Versionamento - Adicionando Alterações
+        </h3>
+        <p class="main__p">
+          Você precisa falar pro git quais os arquivos que você quer versionar.
+        </p>
+        <p class="main__p">
+          Para ver qual é o estado dos seus arquivos:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git status
+        </code></pre>
+        <p class="main__p">
+          Untracked file significa que aquele arquivo não está sendo rastreado.
+        </p>
+        <p class="main__p">
+          Para adicionar um arquivo para ser restreado:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git add nomedoarquivo
+        </code></pre>
+        <p class="main__p">
+          Caso queira fazer isso com mais arquivos, por exemplo, com todos os
+          arquivos da pasta, temos três opções:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git add --all
+          git add -A
+          git add .
+        </code></pre>
+        <h3 class="main__subtitle-2">
+          Versionamento - Salvando alterações
+        </h3>
+        <p class="main__p">
+          Commit é você salvar uma nova versão do seu banco de dados local no
+          seu git.
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git commit -m "Insira a mensagem explicando o que foi feito aqui"
+        </code></pre>
+        <h3 class="main__subtitle-2">Funcionamento do git</h3>
+        <h4 class="main__subtitle-3">Working Directory</h4>
+        <p class="main_p">
+          Seria o local dos arquivos, no caso, a pasta local no seu computador.
+        </p>
+        <ul class="main__list">
+          <li class="main__list-item">
+            Arquivos
+          </li>
+          <ul class="main__list">
+              <li class="main__list-item">Modificados</li>
+              <li class="main__list-item">Excluídos</li>
+              <li class="main__list-item">Adicionados</li>
+          </ul> 
+        </ul>
+        <p class="main__p">
+          Para ir pro próximo estágio:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git add
+        </code></pre>
+        <h4 class="main__subtitle-3">Stagind Area (Staged)</h4>
+        <p class="main_p">Arquivos adicionados e preparados para serem versionados.</p>
+        <p class="main__p">Próximo estágio:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git commit
+        </code></pre>
+        <h4 class="main__subtitle-3">Comitted</h4>
+        <p class="main__p">Os arquivos estão salvos.</p>
+        <h3 class="main__subtitle-2">Visualizando alterações</h3>
+        <p class="main__p">
+          Diz as diferenças que ocorreram no seu repositório de trabalho e nas
+          alterações que você tem commitado:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git diff
+        </code></pre>
+        <p class="main_p">Para ver as diferenças no modo de preparação antes de commitar:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git diff --cached
+        </code></pre>
+        <h3 class="main__subtitle-2">
+          Histórico de alterações
+        </h3>
+        <p class="main__p">Comando usado para ver o histórico de todos os commits que foram feitos no seu projeto:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git log
+        </code></pre>
+        <p class="main__p">As modificações são listadas sempre das mais recentes para as mais antigas.</p>
+        <p class="main__p">O número gigante que aparece escrito após o commit no git log é um tipo de id única para o seu commit, esse número é gerado aleatóriamente e mais tarde nós poderemos usar ele.</p>
+        <p class="main__p">O HEAD aponta a sua última modificações em uma branch.</p>
+        <p class="main__p">O git log tem muitas configurações, vale a pena pesquisar mais. Por exemplo, o comando a baixo mostra todas as modificações em uma linha e é interessante pra quando você tem muitos commits.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git log --oneline
+        </code></pre>
+        <h3 class="main__subtitle-2">Usando commits anteriores</h3>
+        <p class="main__p">Para usar as modificações anteriores vamos utilizar aquele número escrito após o commit no git log.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git checkout insiranumero
+        </code></pre>
+        <p class="main__p">Como esse número é muito grande você pode digitar somente os 6 primeiros, pois estes são únicos.</p>
+        <p class="main__p">Quando você ver "Detached HEAD" significa que a gente pegou nosso checkout e foi para um lugar diferente do HEAD.</p>
+        <p class="main__p">Para sair do commit antigo:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git checkout nomedabranch
+          git checkout master
+        </code></pre>
+        <h3 class="main__subtitle-2">Desfazendo alterações</h3>
+        <p class="main__p">Para desfazer as alterações feitas no git, podemos voltar o arquivo para o commit anterior:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git checkout nomedoarquivo
+        </code></pre>
+        <p class="main__p">Entretanto, isso não funciona para arquivos adicionados, ou seja, arquivos novos no projeto.</p>
+        <p class="main__p">Quando temos muitos arquivos modificados, fica inviável usar o método acima, como solução podemos usar um comando para desfazer as alterações de todos os arquivos que estão na sua branch, onde você consegue voltar ao estado inicial:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git reset --hard
+        </code></pre>
+        <p class="main__p">Dessa forma você volta diretamente sem precisar de uma confirmação, como um atalho, mas também pode-se fazer da seguinte forma:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git reset
+          git reset --hard
+        </code></pre>
+        <h3 class="main__subtitle-2">Ignorando arquivos</h3>
+        <p class="main__p">Em certas situações vamos ter arquivos aos quais não queremos que sejam versionados, como arquivos gerados durante uma execução, para ignorar esses arquivos vamos criar um arquivo da extensão git ignore.</p>
+        <p class="main__p">No windows:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          ren a.txt .gitignore
+        </code></pre>
+        <p class="main__p">Dentro do arquivos .gitignore nós podemos usar alguns padrões para falar para o git excluir arquivos de um certo tipo.</p>
+        <p class="main__p">Por exemplo:
+          "nomedoarquivo.extensão" - para excluir um arquivo específico
+          "*.extensão" - para excluir do versionamento todos os arquivos deste tipo
+          "nomedapasta/*.extensão" - para ecluir todos os arquivos deste tipo que estão dentro da pasta "x"</p>
+        <h3 class="main__subtitle-2">Clonando repositório</h3>
+        <p class="main__p">Para clonar um repositório utilizaremos o git clone, que funciona não só em urls remotas como em arquivos locais.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git clone nomedapastaclonada/ nomedanovapasta
+          git clone url
+        </code></pre>
+      </main>
+    </div>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

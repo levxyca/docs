@@ -70,16 +70,52 @@ a:hover {
   width: 70%;
 }
 
-.main-title {
+.main__title {
   font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.main-subtitle {
+.main__subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
 }
 
-.main-p {
+.main__subtitle-2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.main__subtitle-3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.main__p {
   margin: 20px 0;
   line-height: 1.5;
+}
+
+.main__list {
+  margin-left: 5%;
+}
+
+.main__list-item {
+  list-style: circle;
+  margin: 15px 0;
+  line-height: 1.5em;
+}
+
+.main__code {
+  background-color: #383838;
+  border-radius: 5px;
+}
+
+.main__code-bloco {
+  line-height: 1.5em;
 }
 
 .none {

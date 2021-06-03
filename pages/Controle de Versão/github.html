@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__header">
+        <header class="header">
+          <h1 class="header__title"><a href="../../index.html">Docs</a></h1>
+        </header>
+        <aside class="aside">
+          <nav class="aside__navegacao">
+            <ul>
+              <li class="aside__navegacao-item">
+                <img
+                  src="../../img/seta.png"
+                  class="aside__navegacao-item-seta"
+                /><a href="#">Controle de Versão</a>
+              </li>
+              <ul class="submenu none">
+                <li class="aside__navegacao-submenu">
+                  <a href="git.html">Git</a>
+                </li>
+                <li class="aside__navegacao-submenu">
+                  <a href="github.html">Github</a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+      <main class="main">
+        <h1 class="main__title">Github</h1>
+        <hr />
+        <h2 class="main__subtitle">Introdução ao Github</h2>
+        <p class="main__p">
+          O github consegue armazenar os seus repositórios e com ele você tem o
+          controle de versão dos seus arquivos.
+        </p>
+        <h2 class="main__subtitle">Criando repositório</h2>
+        <p class="main__p">
+          No próprio github, temos as configurações na parte de criar um novo
+          repositório:
+        </p>
+        <ul class="main__list">
+          <li class="main__list-item">Nome do repositório</li>
+          <li class="main__list-item">Descrição do seu projeto</li>
+          <li class="main__list-item">Público ou Privado</li>
+          <li class="main__list-item">
+            Pode inicializar com o readme já ou não
+          </li>
+          <li class="main__list-item">Adicionar gitignore caso queira</li>
+          <li class="main__list-item">Possui MIT license como opção</li>
+        </ul>
+        <h2 class="main__subtitle">Versionar alterações no servidor</h2>
+        <p class="main__p">
+          Depois de modificar um arquivo seu com git add e commitar, para enviar
+          essa mudança pro servidor você vai utilizar:
+        </p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git push
+        </code></pre>
+        <h2 class="main__subtitle">Baixar a última versão do repositório</h2>
+        <p class="main__p">Com esse comando, vamos para o servidor e observamos se a versão utilizada localmente está desatualizada, caso esteja, ele baixa a última versão do projeto/repositório.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git pull
+        </code></pre>
+        <h2 class="main__subtitle">Star, fork e pull request</h2>
+        <h3 class="main__subtitle-2">Watch</h3>
+        <p class="main__p">Not Watching: não está observando, será notificado somente se algum participante te @mencionar</p>
+        <p class="main__p">Releases Only: notificação de novas versões</p>
+        <p class="main__p">Watching: observando</p>
+        <p class="main__p">Ignoring: nunca será notificado sobre nada daquele projeto</p>
+        <h3 class="main__subtitle-3">Star</h3>
+        <p class="main__p">Você pode favoritar projetos para fácil acesso posteriormente.</p>
+        <h3 class="main__subtitle-3">Fork</h3>
+        <p class="main__p">O fork pega o projeto e basicamente faz um clone dele, a diferença é que no fork você leva todos o projeto pro seu perfil e aí você consegue versioná-lo.</p>
+        <h3 class="main__subtitle-3">Pull Request</h3>
+        <p class="main__p">Quando você faz um fork do projeto e faz modificações nele, você pode dar um pull request para contribuir com aquele projeto, com isso suas contribuições vão poder ir para o projeto original.</p>
+        <h2 class="main__subtitle">Issues, milestones, labels</h2>
+        <h3 class="main__subtitle-3">Issues</h3>
+        <p class="main__p">É onde você pode relatar os erros que encontrar no projeto.</p>
+        <h3 class="main__subtitle-3">Labels</h3>
+        <p class="main__p">Serve para marcar as issues abertas, como um tipo de tag.</p>
+        <h3 class="main__subtitle-3">Milestones</h3>
+        <p class="main__p">É algo como um release, um filtro a mais, basicamente, uma nova versão.</p>
+        <p class="main__p">Você consegue tentar resolver problemas (issues) de outros projetos, no pull resquest, na parte de descrição é só digitar "Close #" e achar o nome da issue.</p>
+        <h2 class="main__subtitle">Arquivo README</h2>
+        <p class="main__p">É onde você vai descrevar as funcionalidades do projeto, como usar e coisas do tipo.</p>
+        <h2 class="main__subtitle">Comandos intermediários e avançados</h2>
+        <h3 class="main__subtitle-2">Conceitos de branch</h3>
+        <ul class="main__list">
+            <li class="main__list-item">Branch é uma ramificação no projeto que permite que funcionalidades sejam desenvolvidas separadamente sem impactar funcionalidades estáveis no projeto.</li>
+            <li class="main__list-item">Existem várias branches no repositório e algumas podem não ser utilizadas.</li>
+            <li class="main__list-item">Merge é você colocar uma branch no branch master, ou seja, implementar pro usuário final.</li>
+            <li class="main__list-item">As branches permitem que a gente desenvolva as coisas separadamente.</li>
+        </ul>
+        <h3 class="main__subtitle-2">Alterações não versionadas</h3>
+        <p class="main__p">Caso você esteja trabalhando em um projeto e tenha arquivos não versionados, quando for mudar de branch o git irá sobrescrever os arquivos e você perderá tudo.</p>
+        <p class="main__p">Caso isso aconteça, você pode dar um commit ou apenas desfazer as alterações usando:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git reset --hard
+        </code></pre>
+        <h3 class="main__subtitle-2">Mudança de branch</h3>
+        <p class="main__p">Responsável por listar as branches que nós temos no nosso repositório local:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git branch
+        </code></pre>
+        <ul class="main__list">
+            <li class="main__list-item">Irá aparecer um "*" na lista de branches para identificar qual branch você está</li>
+            <li class="main__list-item">Você não pode criar branches com o mesmo nome</li>
+        </ul>
+        <p class="main__p">Para você ir para a branch que criou ou qualquer outra já existente:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git checkout nomedabranch
+        </code></pre>
+        <p class="main__p">Um corta caminho, caso você não queira usar 'git branch' depois 'git checkout':</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git checkout -b nomedabranch
+        </code></pre>
+        <h3 class="main__subtitle-2">Enviando branch para o repositório</h3>
+        <p class="main__p">Primeiramente, vamos mudar para a branch que queremos enviar pro repositório, depois, usamos o seguinte comando para fazer a criação da branch lá no servidor e rastrear com a nossa branch local:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git push --set-upstream origin nomequevocequiser
+        </code></pre>
+        <p class="main__p">Um corta caminho para o comando acima:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git push -u origin nomequevocequiser
+        </code></pre>
+        <h3 class="main__subtitle-2">Atualizando branch</h3>
+        <p class="main__p">Quando você usa o git clone e baixa um repositório para a sua máquina, só irá aparece a branch master na sua listagem, pois caso haja outras, ela ainda não foram utilizadas por você,  logo não aparecem no histórico.</p>
+        <p class="main__p">Para uma branch aparecer na listagem do 'git branch' precisamos dar um 'git checkout nomedabranch'. E, caso uma branch seja criada por outra pessoa depois de você já ter baixado o repositório, basta você atualiza-lo com:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git pull
+        </code></pre>
+        <h3 class="main__subtitle-2">Remover branches locais</h3>
+        <p class="main__p">O comando para remover uma branch é:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git branch -d nomedabranch
+        </code></pre>
+        <ul class="main__list">
+            <li class="main__list-item">- Você não pode remover uma branch que você está checado naquele momento</li>
+        </ul>
+        <p class="main__p">Caso o git não deixe você remover a branch pedindo uma validação ou algo do tipo, você pode força-lo a fazer isso com:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git branch -D nomedabranch
+        </code></pre>
+        <h3 class="main__subtitle-2">Remover branches remotas</h3>
+        <p class="main__p">Para fazer remoção de uma branch que está no servidor, utilizamos:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git push --delete origin nomedabranch
+        </code></pre>
+        <h3 class="main__subtitle-2">Renomear branch</h3>
+        <p class="main__p">Para renomear uma branch local, caso você esteja na branch que você quer fazer isso:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git branch -m novonome
+        </code></pre>
+        <p class="main__p">Caso não:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git branch -m nomedabranch novonome
+        </code></pre>
+        <h3 class="main__subtitle-2">Mesclando alterações</h3>
+        <p class="main__p">Para mesclar usamos o comando 'merge', que significa integrar a branch atual com a branch master, esse comando trás todas as alterações e já faz o commit se não tiver conflitos.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git checkout master
+            git merge nomedabranch
+        </code></pre>
+        <h3 class="main__subtitle-2">Resolvendo conflitos usando o kdiff3</h3>
+        <p class="main__p">Kdiff3 é uma ferramenta gráfica que pode auxiliar nossa resolução de conflitos. Para utiliza-lo, primeiramente, usaremos um comando que faz com que suas ferramentas gráficas sejam abertas baseadas nas suas configurações pelo git:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git mergetool
+        </code></pre>
+        <p class="main__p">Para fazer a configuração do kdiff3:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+            git config --global --add merge.tool kdiff3
+            git config --global --add mergetool.kdiff3.path "local onde foi instalado arquivo"
+            git config --global --add mergetool.kdiff3.trustExitCode false
+        </code></pre>
+        <h3 class="main__subtitle-2">Pull Request</h3>
+        <p class="main__p">É uma requisição de mudança que você cria, ou seja, você pede para que essas mudanças sejam integradas a branch master daquele projeto, no caso, alguém irá revisar, autorizar antes de mergiar, assim evitando erros.</p>
+        <h3 class="main__subtitle-2">Criação e listagem de tag (Release)</h3>
+        <ul class="main__list">
+            <li class="main__list-item">Tag é um ponteiro que marca um commit específico</li>
+            <li class="main__list-item">Isso é importante pois alguns commits são chave durante o desenvolvimento de algo</li>
+            <li class="main__list-item">Um exemplo: marcar o commit que deu a versão estável de um projeto</li>
+        </ul>
+        <p class="main__p">Para fazer a criação da tag:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git tag -a nomedatag -m "Insira sua mensagem aqui"
+        </code></pre>
+        <h3 class="main__subtitle-2">Enviando tag para o repositório</h3>
+        <pre class="main__code"><code class="main__code-bloco">
+          git push origin nomedatag
+        </code></pre>
+        <h3 class="main__subtitle-2">Utilizando tags</h3>
+        <pre class="main__code"><code class="main__code-bloco">
+          git checkout nomedatag
+        </code></pre>
+        <h3 class="main__subtitle-2">Removendo tags</h3>
+        <p class="main__p">Local:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git tag -d nomedatag
+        </code></pre>
+        <p class="main__p">Servidor:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git push --delete origin nomedatag
+        </code></pre>
+        <h3 class="main__subtitle-2">Tag em commit antigos</h3>
+        <p class="main__p">1 opção:</p>
+        <ul class="main__list">
+          <li class="main__list-item">Pegar o seu commit</li>
+        </ul>
+        <pre class="main__code"><code class="main__code-bloco">
+          git log --oneline
+          git checkout númerodocommit
+          git tag -a nomedatag -m "Insira sua mensagem"
+          git push origin nomedatag
+        </code></pre>
+        <p class="main__p">2 opção:</p>
+        <ul class="main__list">
+          <li class="main__list-item">Especificar o número do commit</li>
+        </ul>
+        <pre class="main__code"><code class="main__code-bloco">
+          git tags -a nomedatag numerodocommit
+        </code></pre>
+        <h3 class="main__subtitle-2">Stash - Uso e criação</h3>
+        <ul class="main__list">
+          <li class="main__list-item">Serve para quando você não quer desfazer uma mudança mas também não quer commitar ainda</li>
+          <li class="main__list-item">Basicamente, você vai pegar essas mudanças e guardar na memória</li>
+        </ul>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash
+        </code></pre>
+        <h2 class="main__subtitle-2">Stash - Listando e removendo</h2>
+        <p class="main__p">Para criar o stash com comentário:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash save "Insira sua mensagem aqui"
+        </code></pre>
+        <p class="main__p">Para listar:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash list
+        </code></pre>
+        <p class="main__p">Para usar a stash:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash apply
+        </code></pre>
+        <ul class="main__list">
+          <li class="main__list-item">Lembrando que ele sempre pega o primeiro e executa a mudança</li>
+        </ul>
+        <p class="main__p">Para aplicar e remover:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash pop
+        </code></pre>
+        <p class="main__p">Caso você queira poegar outro que não seja o primeiro:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git stash pop stash@{númeroquevcquer}
+          git stash drop stash@{númeroquevcquer}
+        </code></pre>
+        <h3 class="main__subtitle-2">Desfazendo Commits</h3>
+        <pre class="main__code"><code class="main__code-bloco">
+          git reset --hard HEAD~ncommitpvoltar
+        </code></pre>
+        <ul class="main__list">
+          <li class="main__list-item">Não tem como desfazer um commit que está no servidor, caso precise de algo do tipo você trá que versionar o projeto e depois voltar</li>
+        </ul>
+        <p class="main__p">Permite combinar alterações na área de staging com o commit anterior em vez de criar um commit novo:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git commit --amend
+        </code></pre>
+        <h3 class="main__subtitle-2">Fetch</h3>
+        <p class="main__p">Esse comando é executado junto com o 'git merge' e com o 'git pull', ele é quem trás as atualizações do servidor pro seu repositório local.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git fetch
+        </code></pre>
+        <p class="main__p">Para aplicar as alterações:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git merge
+        </code></pre>
+        <ul class="main__list">
+          <li class="main__list-item">Basicamente são os comandos que o git pull executa.</li>
+        </ul>
+        <h3 class="main__subtitle-2">Rebase</h3>
+        <p class="main__p">É usado quando você quer ter um histórico mais linear do projeto. Basicamente ele pega os commits de uma branch e aplica em outra de forma linear.</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git rebase master
+        </code></pre>
+        <h2 class="main__subtitle">Utilidades</h2>
+        <h3 class="main__subtitle-2">Alias</h3>
+        <p class="main__p">É um comando de abreviação para usar os comandos do git de forma diferente. Exemplos:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git config --global alias.s status
+          git status
+          git s
+        </code></pre>
+        <pre class="main__code"><code class="main__code-bloco">
+          git config --global alis.p pull
+          git pull
+          git p
+        </code></pre>
+        <p class="main__p">Para deletar, exemplo:</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git config --global --unset alis.s
+        </code></pre>
+        <h3 class="main__subtitle-2">Remote</h3>
+        <p class="main__p">É um comando que mostra qual a url que está associada ao projeto que você está trabalhando</p>
+        <pre class="main__code"><code class="main__code-bloco">
+          git remote -v
+        </code></pre>
+        <h3 class="main__subtitle-2">Grep</h3>
+        <p class="main__p">
+          É um filtro que a gente consegue executar junto com algum comando.
+        </p>
+        <h2 class="main__subtitle">Ferramentas gráficas</h2>
+        <ul class="main__list">
+          <li class="main__list-item">Sourcetree</li>
+          <li class="main__list-item">Gitkraken</li>
+        </ul>
+      </main>
+    </div>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

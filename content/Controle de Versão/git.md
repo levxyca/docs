@@ -1,10 +1,3 @@
-+++
-title = "Git"
-sort_by = "date"
-template = "docs.html"
-page_template = "docs-page.html"
-+++
-
 # Git
 ---------
 Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
@@ -157,7 +150,7 @@ git checkout nomedoarquivo
 ```
 Entretanto, isso não funciona para arquivos adicionados, ou seja, arquivos novos no projeto.
 
-Quando tmos muitos arquivos modificados, fica inviável usar o método acima, como solução podemos usar um comando para desfazer as alterações de todos os arquivos que estão na sua branch, onde você consegue voltar ao estado inicial:
+Quando temos muitos arquivos modificados, fica inviável usar o método acima, como solução podemos usar um comando para desfazer as alterações de todos os arquivos que estão na sua branch, onde você consegue voltar ao estado inicial:
 ```sh
 git reset --hard
 ```
@@ -184,8 +177,6 @@ Dentro do arquivos .gitignore nós podemos usar alguns padrões para falar para 
 "*.extensão" - para excluir do versionamento todos os arquivos deste tipo
 "nomedapasta/*.extensão" - para ecluir todos os arquivos deste tipo que estão dentro da pasta "x"
 
-No mac/linux:
-Use mv.
 ### Clonando repositório
 Para clonar um repositório utilizaremos o git clone, que funciona não só em urls remotas como em arquivos locais.
 ```sh
