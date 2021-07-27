@@ -1,4 +1,4 @@
-base_url = "https://docs-levxyca.netlify.app/"
+base_url = "/"
 title = "Docs"
 compile_sass = true
 build_search_index = true
