@@ -1,11 +1,12 @@
-base_url = "/"
-compile_sass = true
+base_url = "docs.levxyca.codes"
 title = "Docs"
-highlight_code = true
-highlight_theme = "kronuz"
+compile_sass = true
 build_search_index = true
 
-taxonomies = [
-    {name = "tags", rss = true},
-    {name = "authors", rss = true},
-]
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+logo = "/logo.png"
+favicon = "/favicon.ico"

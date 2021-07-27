@@ -1,27 +1,10 @@
-# 📂 Docs
+# Docs
 
-![GitHub repo size](https://img.shields.io/github/repo-size/levxyca/docs?style=for-the-badge)
+![GitHub starts](https://img.shields.io/github/stars/levxyca/docs?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/levxyca/docs?style=for-the-badge)
 
-<img src="./img/exemplo.png" alt="exemplo imagem">
+<img src="./static/exemplo.png" alt="exemplo imagem">
 
-> Esse projeto reune todos os conteúdos que auxiliam meus estudos e resumos criados por mim.
+> Um projeto onde eu disponibilizo meus resumos e links interessantes para auxiliar outras pessoas que desejam estudar sobre programação.
 
-## ☕ Acesse o projeto [aqui](https://docs-levxyca.netlify.app/).
-
-Você pode utilizar o ícone de lupa para buscar algum conteúdo específico ou simplesmente navegar pelas páginas.
-
-## 🤝 Feito com muito carinho
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/19956731?v=4" width="100px;" alt="Foto da Leticia Caroline no GitHub"/><br>
-        <sub>
-          <b>Leticia Caroline</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+Feito com 🖤 por [levxyca](https://links.levxyca.codes/).

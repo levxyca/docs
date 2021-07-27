@@ -1,13 +1,9 @@
 +++
-title = "Docs"
-sort_by = "date"
-insert_anchor_links = "right"
+title = "index"
 +++
 
-# Docs
+Um projeto onde eu disponibilizo meus resumos e links interessantes para auxiliar outras pessoas que desejam estudar sobre programação.
 
-> Esse site foi criado para organizar todas as minhas anotações de estudos, sinta-se a vontade para ler os resumos, ver resoluções de exercícios e aprender muito.
+Considere ajudar esse projeto deixando uma star no [repositório](https://github.com/levxyca/docs).
 
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Feito com 🖤 por [levxyca](https://links.levxyca.codes/).

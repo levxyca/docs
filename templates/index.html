@@ -1,82 +1,135 @@
-{% import "macro.html" as macro %}
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
     <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-      <title>{% block title %}{{ config.title }}{% endblock title %}</title>     
-      <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+      <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+      {% if config.extra.favicon %}
+        <link rel="icon" href="{{ config.extra.favicon | safe }}">
+      {% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title> 
     </head>
-
     <body>
-      <nav>
-        <div id="subnav">
-          <form class="theme-selector">
-            <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)">&#9706;</button>
-            <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)">&#9705;</button>
-          </form>
-          <a href="/search">&#8981;</a>       
-        </div>
+
+      {% if config.extra.release %}
+    <script>
+         fetch('{{ config.extra.release | safe }}')
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            let release_name = data.name;
+            let html_url = data.html_url;
+            release.innerHTML = `<a href='${html_url}'>${release_name}</a>`;
+          });
+    </script>
+      {% endif %}
+    <main>
 
       {% block nav %}
-        <!-- <ul id="breadcrumbs">
-          {% for tax in config.taxonomies %}
-            <li>/<a href="/{{tax.name}}/">{{tax.name}}</a>&nbsp;</li> 
-          {% endfor %}
-        </ul> -->
-        <h1>{{ config.title }}</h1>  
-          {{ macro::tree() }}
-      {% endblock nav %}
-      </nav>
 
-      <main>
-      {% block content %}
+        <nav>
+          {% if config.extra.logo %}
+            {% if current_path == "/" %}
+            <img src="{{ config.extra.logo | safe }}" alt="" />
 
-        {% set_global header_count = 0 %}
-        {% for h2 in section.toc %}
-          {% set_global header_count = header_count + 1 %}
-          {% for h3 in h2.children %}
-            {% set_global header_count = header_count + 1 %}
-            {% for h4 in h3.children %}
-              {% set_global header_count = header_count + 1 %}
+            {% else %}<a href="{{ config.base_url }}">
+            <img src="{{ config.extra.logo | safe }}" alt="" />
+                </a>
+            {% endif %}
+            
+          {% else %}
+            <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
+          {% endif %}
+
+          {% if config.extra.release %}
+            <div id="release"></div>
+          {% endif %}
+  
+  <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+    <div id="trees">
+        {% set section = get_section(path="_index.md") %}       
+            {% for p in section.subsections %}
+                {% set subsection = get_section(path=p) %} 
+            
+ 
+        <input class="tree-toggle" type="checkbox" id="{{ subsection.title | slugify  }}" 
+        {% if current_path is starting_with(subsection.path) %}checked{% endif %} />
+        <label class="tree-toggle-label" for="{{ subsection.title | slugify  }}">{{ subsection.title }}</label>
+                        
+        <ul class="subtree">
+                {% for page in subsection.pages %}
+                                <li {% if current_path == page.path %}class="active"{% endif %}>
+                                    <a href="{{page.permalink | safe }}">{{page.title}}</a>
+                                </li>
+
+                            {% if current_path == page.path %} 
+                                
+  {% set_global header_count = 0 %}
+  {% for h2 in page.toc %}
+    {% set_global header_count = header_count + 1 %}
+    {% for h3 in h2.children %}
+      {% set_global header_count = header_count + 1 %}
+      {% for h4 in h3.children %}
+        {% set_global header_count = header_count + 1 %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if header_count > 4 %}
+      <ul id="toc">
+        {% for h2 in page.toc %}
+          <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+          {% if h2.children %}
+          <ul>        
+            {% for h3 in h2.children %}
+            <li><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
             {% endfor %}
-          {% endfor %}
-        {% endfor %}
+         </ul>
+    {% endif %}
+        </li>
+    {% endfor %}
+      </ul>
+    {% endif %}
 
-        {% if header_count > 4 %}
-            <ul id="toc">
-              {% for h2 in section.toc %}
-                <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-                {% if h2.children %}<ul>        
-                  {% for h3 in h2.children %}
-                  <li><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
-                {% endfor %}
-              </ul>
-        {% endif %}
-              </li>
-        {% endfor %}
-            </ul>
-        {% endif %}
+                        
+    {% endif %}
+    {% endfor %}
+    </ul>         
+    {% endfor %}
+    </div>    
+  </nav>
+    {% endblock nav %}
 
-        <article>
-        {{ section.content | safe }}
-        </article>
-      {% endblock content %}
-      </main>
+<article>
+ 
+  {% if config.build_search_index %}
+  <div id="on_right">
+    <span id="search-ico" class="ms-Icon--Search"></span>
+  </div>
+    <div class="search-container">
+          <input id="search" type="search" placeholder="Digite o que pesquisar...">
+            <div class="search-results">
+              <div class="search-results__header"></div>
+                <ul class="search-results__items"></ul>
+              </div>
+    </div>
+  {% endif %}       
 
-      <script type="text/javascript" src="{{ get_url(path="themes.js") | safe }}"></script>
+  <div id="wrap">
+    {% block content %}
+      {{ section.content | safe }}
+    {% endblock content %}
+  </div>
 
-      <script>
-        function burger() {
-          var x = document.getElementById("bger");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
-    </body>
+</article>
+</main>
+
+  {% if config.build_search_index %}
+  <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") | safe }}" defer></script>
+  <script type="text/javascript" src="{{ get_url(path="search_index.en.js") | safe }}" defer></script>
+  <script type="text/javascript" src="{{ get_url(path="js.js") | safe }}" defer></script>
+  {% endif %}
+
+</body>
 </html>
