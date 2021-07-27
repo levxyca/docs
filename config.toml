@@ -1,4 +1,4 @@
-base_url = "docs.levxyca.codes"
+base_url = "/"
 title = "Docs"
 compile_sass = true
 build_search_index = true
