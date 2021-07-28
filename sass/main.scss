@@ -263,7 +263,7 @@ main {
 
 article {
  width: calc(100% - (#{$baseline} * 4 + 20rem));
- margin-left:calc(#{$baseline} * 2);
+ margin: 4rem calc(#{$baseline} * 2);
 
  img {
    max-width:100%;
