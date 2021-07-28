@@ -1,11 +1,11 @@
-base_url = "docs.levxyca.codes"
+base_url = "/"
 title = "Docs"
 compile_sass = true
 build_search_index = true
 
 [markdown]
 highlight_code = true
-highlight_theme = "base16-ocean-dark"
+highlight_theme = "charcoal"
 
 [extra]
 logo = "/logo.png"
